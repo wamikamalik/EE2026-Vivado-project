@@ -4,7 +4,7 @@ To design an interactive sound volume recognition system using the Basys-3 Artix
 ## When was the project done?
 AY19/20 Semester 2.
 ## Collaborators
-- Wamika Malik (Computer Engineering with second major in Mathematics)
-- Vishruti Ranjan (Computer Engineering with minor in Mathematics)
+- Wamika Malik (Computer Engineering with second major in Mathematics) {Github Username: wamikamalik}
+- Vishruti Ranjan (Computer Engineering with minor in Mathematics) {Github Username: sevenseasofbri}
 ## User Manual 
 [Click Here](https://github.com/wamikamalik/EE2026-Vivado-project/blob/master/EE2026_FPGA_Project_User_Manual.pdf)
