@@ -1,4 +1,4 @@
-## EE2026-FPGA Design Project
+### EE2026-FPGA Design Project
 ## Aim
 To design an interactive sound volume recognition system using the Basys-3 Artix-7 FPGA trainer board, with a PMOD Microphone and OLED Screen.
 ## When was the project done?
