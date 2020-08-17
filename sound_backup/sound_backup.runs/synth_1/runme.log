@@ -1,0 +1,2131 @@
+
+*** Running vivado
+    with args -log Top_Student.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16532 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 357.508 ; gain = 100.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-6157] synthesizing module 'clk_voice' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/clk_voice.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_voice' (1#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/clk_voice.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (2#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Audio_Capture.v:25]
+WARNING: [Synth 8-689] width (16) of port connection 'sample' does not match port width (12) of module 'Audio_Capture' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:48]
+INFO: [Synth 8-6157] synthesizing module 'slow_clock10Hz' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/slow_clock10Hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slow_clock10Hz' (3#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/slow_clock10Hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment_LastTwo' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/SevenSegment_LastTwo.v:5]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegDisplay' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/SevenSegDisplay.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/SevenSegDisplay.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegDisplay' (4#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/SevenSegDisplay.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/SevenSegment_LastTwo.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment_LastTwo' (5#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/SevenSegment_LastTwo.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_oled' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/clk_oled.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_oled' (6#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/clk_oled.v:23]
+INFO: [Synth 8-6157] synthesizing module 'single_pulse' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/single_pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sp_clk' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/sp_clk.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sp_clk' (7#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/sp_clk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (8#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulse' (9#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/single_pulse.v:23]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:109]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:114]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:121]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:125]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:127]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:132]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:139]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:144]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:146]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:151]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:158]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (10#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Oled_Display.v:36]
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:199]
+INFO: [Synth 8-6157] synthesizing module 'basic_oled' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/basic_oled.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'basic_oled' (11#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/basic_oled.v:23]
+INFO: [Synth 8-6157] synthesizing module 'improve_oled' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:22]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:170]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:174]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:178]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:181]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:184]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:188]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:191]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:196]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:199]
+INFO: [Synth 8-6157] synthesizing module 'sun_move' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/sun_move.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sun_move' (12#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/sun_move.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sun_clk' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/sun_clk.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sun_clk' (13#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/sun_clk.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'improve_oled' (14#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:22]
+INFO: [Synth 8-6157] synthesizing module 'basic_invert' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/basic_invert.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'basic_invert' (15#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/basic_invert.v:23]
+INFO: [Synth 8-6157] synthesizing module 'basic_invert1' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/basic_invert1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'basic_invert1' (16#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/basic_invert1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'enlarging_man' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'enlarging_man' (17#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:23]
+INFO: [Synth 8-6157] synthesizing module 'heart' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/heart.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/heart.v:53]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/heart.v:64]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/heart.v:67]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/heart.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'heart' (18#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/heart.v:23]
+INFO: [Synth 8-6157] synthesizing module 'secret_mode' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/secret_mode.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'secret_mode' (19#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/secret_mode.v:23]
+INFO: [Synth 8-6157] synthesizing module 'welcome' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/welcome.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'welcome' (20#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/welcome.v:23]
+INFO: [Synth 8-6157] synthesizing module 'to_secret' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/to_secret.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'to_secret' (21#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/to_secret.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Scroll_Seg' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Scroll_Seg.v:23]
+	Parameter E bound to: 8'b10000110 
+	Parameter N bound to: 8'b10101011 
+	Parameter T bound to: 8'b10000111 
+	Parameter four bound to: 8'b10011001 
+	Parameter L bound to: 8'b11000111 
+	Parameter P bound to: 8'b10001100 
+	Parameter A bound to: 8'b10001000 
+	Parameter S bound to: 8'b10010010 
+	Parameter W bound to: 8'b11010101 
+	Parameter O bound to: 8'b11000000 
+	Parameter D bound to: 8'b10100001 
+	Parameter G bound to: 8'b10010000 
+	Parameter M bound to: 8'b10101010 
+	Parameter I bound to: 8'b11001111 
+	Parameter C bound to: 8'b11000110 
+	Parameter B bound to: 8'b10000011 
+	Parameter U bound to: 8'b11000001 
+	Parameter blank bound to: 8'b11111111 
+	Parameter dash bound to: 8'b10111111 
+	Parameter R bound to: 8'b10101111 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Scroll_Seg.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'Scroll_Seg' (22#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Scroll_Seg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/debouncer.v:23]
+	Parameter COUNT_MAX bound to: 19 - type: integer 
+	Parameter COUNT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (23#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/PS2Receiver.v:55]
+WARNING: [Synth 8-6014] Unused sequential element dataprev_reg was removed.  [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/PS2Receiver.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (24#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/PS2Receiver.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/top.v:187]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/top.v:191]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/top.v:195]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/top.v:199]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/top.v:186]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/top.v:206]
+INFO: [Synth 8-6155] done synthesizing module 'top' (25#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (26#1) [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/Top_Student.v:18]
+WARNING: [Synth 8-3331] design to_secret has unconnected port mode[4]
+WARNING: [Synth 8-3331] design to_secret has unconnected port mode[3]
+WARNING: [Synth 8-3331] design to_secret has unconnected port mode[2]
+WARNING: [Synth 8-3331] design to_secret has unconnected port mode[1]
+WARNING: [Synth 8-3331] design to_secret has unconnected port mode[0]
+WARNING: [Synth 8-3331] design welcome has unconnected port mode[4]
+WARNING: [Synth 8-3331] design welcome has unconnected port mode[3]
+WARNING: [Synth 8-3331] design welcome has unconnected port mode[2]
+WARNING: [Synth 8-3331] design welcome has unconnected port mode[1]
+WARNING: [Synth 8-3331] design welcome has unconnected port mode[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 445.449 ; gain = 188.563
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 445.449 ; gain = 188.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 445.449 ; gain = 188.563
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'tx'. [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/constrs_1/new/constraints.xdc:273]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/constrs_1/new/constraints.xdc:273]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tx'. [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/constrs_1/new/constraints.xdc:274]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/constrs_1/new/constraints.xdc:274]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 804.746 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 804.746 ; gain = 547.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 804.746 ; gain = 547.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 804.746 ; gain = 547.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clk20k0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MAX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "seg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "clk6p25m0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mode1" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element mode1_reg was removed.  [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/basic_oled.v:39]
+INFO: [Synth 8-5545] ROM "clk0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:70]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:70]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:72]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:72]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:72]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:74]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:79]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:79]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:82]
+INFO: [Synth 8-5546] ROM "data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mode1" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element mode1_reg was removed.  [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/basic_invert.v:39]
+INFO: [Synth 8-5546] ROM "mode1" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element mode1_reg was removed.  [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/basic_invert1.v:39]
+INFO: [Synth 8-5546] ROM "upper0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "upper0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "counth" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/heart.v:76]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/heart.v:62]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/secret_mode.v:86]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/secret_mode.v:103]
+INFO: [Synth 8-5546] ROM "flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "flag" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "count10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "seg3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "O" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'position_reg' in module 'top'
+INFO: [Synth 8-5544] ROM "start1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "led" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "letter3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "position" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "position" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "position" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "seg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "position" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "position" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "position" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "start1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "led" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "letter3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "position" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "position" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "position" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "seg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "position" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "position" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "position" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "an0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "an0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "an0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "an0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 | 00000000000000000000000000000011
+                 iSTATE1 |                               01 | 00000000000000000000000000000010
+                 iSTATE0 |                               10 | 00000000000000000000000000000001
+                  iSTATE |                               11 | 00000000000000000000000000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'position_reg' using encoding 'sequential' in module 'top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 804.746 ; gain = 547.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 104   
+	   3 Input     32 Bit       Adders := 8     
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 20    
+	   2 Input      8 Bit       Adders := 8     
+	   2 Input      7 Bit       Adders := 17    
+	   2 Input      6 Bit       Adders := 6     
+	   3 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               25 Bit    Registers := 4     
+	               23 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 16    
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 24    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 15    
+	                5 Bit    Registers := 10    
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 39    
++---Multipliers : 
+	                32x32  Multipliers := 29    
+	                 4x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 7     
+	   6 Input     32 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   6 Input     25 Bit        Muxes := 4     
+	   2 Input     23 Bit        Muxes := 1     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 77    
+	   9 Input     16 Bit        Muxes := 6     
+	   7 Input     16 Bit        Muxes := 4     
+	  13 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	   5 Input     14 Bit        Muxes := 1     
+	   6 Input     14 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	  18 Input      8 Bit        Muxes := 2     
+	  76 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 17    
+	  10 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 4     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 7     
+	   9 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 33    
+	  32 Input      5 Bit        Muxes := 2     
+	  17 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 11    
+	   6 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 213   
+	   6 Input      1 Bit        Muxes := 6     
+	  18 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	  76 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	  17 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 25    
+	   2 Input      8 Bit        Muxes := 5     
+	  17 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	  17 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module clk_voice 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Audio_Capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module slow_clock10Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module SevenSegDisplay 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+Module SevenSegment_LastTwo 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  18 Input      8 Bit        Muxes := 2     
+	  18 Input      1 Bit        Muxes := 1     
+Module clk_oled 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sp_clk 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module basic_oled 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+	   9 Input     16 Bit        Muxes := 2     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 2     
+Module sun_move 
+Detailed RTL Component Info : 
++---Registers : 
+	               25 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     25 Bit        Muxes := 1     
+Module sun_clk 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module improve_oled 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 53    
+	   3 Input     32 Bit       Adders := 8     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                32x32  Multipliers := 21    
+	                 4x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 20    
+	   2 Input     14 Bit        Muxes := 1     
+	   5 Input     14 Bit        Muxes := 1     
+	   6 Input     14 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+Module basic_invert 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+	   9 Input     16 Bit        Muxes := 2     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 2     
+Module basic_invert1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+	   9 Input     16 Bit        Muxes := 2     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 2     
+	   9 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module enlarging_man 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 13    
+	   2 Input      8 Bit       Adders := 8     
+	   2 Input      7 Bit       Adders := 17    
+	   2 Input      6 Bit       Adders := 5     
+	   3 Input      6 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 14    
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+Module heart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 12    
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                32x32  Multipliers := 4     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module secret_mode 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 29    
+	   2 Input      9 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Multipliers : 
+	                32x32  Multipliers := 4     
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 17    
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   5 Input      1 Bit        Muxes := 1     
+Module welcome 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 51    
+Module to_secret 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+Module Scroll_Seg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  76 Input      8 Bit        Muxes := 4     
+	  76 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module PS2Receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 3     
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 10    
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 12    
+	  10 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 91    
+	   8 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "MAX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clk0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:79]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:80]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:80]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:70]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:70]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:71]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:71]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:72]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:73]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:73]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:74]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:74]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:70]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:92]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:92]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:65]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:65]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:163]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:163]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:119]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/improve_oled.v:119]
+DSP Report: Generating DSP oled_data5, operation Mode is: A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data6, operation Mode is: A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is: A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is: A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is: A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data5, operation Mode is: A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data6, operation Mode is: A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is: A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data14, operation Mode is: A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is: A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is: A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is: A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is: A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is: A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data13, operation Mode is: A*B.
+DSP Report: operator oled_data13 is absorbed into DSP oled_data13.
+DSP Report: operator oled_data13 is absorbed into DSP oled_data13.
+DSP Report: Generating DSP oled_data13, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data13 is absorbed into DSP oled_data13.
+DSP Report: operator oled_data13 is absorbed into DSP oled_data13.
+DSP Report: Generating DSP oled_data13, operation Mode is: A*B.
+DSP Report: operator oled_data13 is absorbed into DSP oled_data13.
+DSP Report: operator oled_data13 is absorbed into DSP oled_data13.
+DSP Report: Generating DSP oled_data13, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data13 is absorbed into DSP oled_data13.
+DSP Report: operator oled_data13 is absorbed into DSP oled_data13.
+DSP Report: Generating DSP oled_data12, operation Mode is: A*B.
+DSP Report: operator oled_data12 is absorbed into DSP oled_data12.
+DSP Report: operator oled_data12 is absorbed into DSP oled_data12.
+DSP Report: Generating DSP oled_data12, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data12 is absorbed into DSP oled_data12.
+DSP Report: operator oled_data12 is absorbed into DSP oled_data12.
+DSP Report: Generating DSP oled_data12, operation Mode is: A*B.
+DSP Report: operator oled_data12 is absorbed into DSP oled_data12.
+DSP Report: operator oled_data12 is absorbed into DSP oled_data12.
+DSP Report: Generating DSP oled_data12, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data12 is absorbed into DSP oled_data12.
+DSP Report: operator oled_data12 is absorbed into DSP oled_data12.
+DSP Report: Generating DSP oled_data11, operation Mode is: A*B.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: Generating DSP oled_data11, operation Mode is: A*B.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: Generating DSP oled_data11, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: Generating DSP oled_data11, operation Mode is: A*B.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: Generating DSP oled_data11, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: Generating DSP oled_data11, operation Mode is: A*B.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: Generating DSP oled_data11, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: Generating DSP oled_data10, operation Mode is: A*B.
+DSP Report: operator oled_data10 is absorbed into DSP oled_data10.
+DSP Report: operator oled_data10 is absorbed into DSP oled_data10.
+DSP Report: Generating DSP oled_data10, operation Mode is: A*B.
+DSP Report: operator oled_data10 is absorbed into DSP oled_data10.
+DSP Report: operator oled_data10 is absorbed into DSP oled_data10.
+DSP Report: Generating DSP oled_data10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data10 is absorbed into DSP oled_data10.
+DSP Report: operator oled_data10 is absorbed into DSP oled_data10.
+DSP Report: Generating DSP oled_data10, operation Mode is: A*B.
+DSP Report: operator oled_data10 is absorbed into DSP oled_data10.
+DSP Report: operator oled_data10 is absorbed into DSP oled_data10.
+DSP Report: Generating DSP oled_data10, operation Mode is: A*B.
+DSP Report: operator oled_data10 is absorbed into DSP oled_data10.
+DSP Report: operator oled_data10 is absorbed into DSP oled_data10.
+DSP Report: Generating DSP oled_data10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data10 is absorbed into DSP oled_data10.
+DSP Report: operator oled_data10 is absorbed into DSP oled_data10.
+DSP Report: Generating DSP oled_data9, operation Mode is: A*B.
+DSP Report: operator oled_data9 is absorbed into DSP oled_data9.
+DSP Report: operator oled_data9 is absorbed into DSP oled_data9.
+DSP Report: Generating DSP oled_data9, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data9 is absorbed into DSP oled_data9.
+DSP Report: operator oled_data9 is absorbed into DSP oled_data9.
+DSP Report: Generating DSP oled_data9, operation Mode is: A*B.
+DSP Report: operator oled_data9 is absorbed into DSP oled_data9.
+DSP Report: operator oled_data9 is absorbed into DSP oled_data9.
+DSP Report: Generating DSP oled_data9, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data9 is absorbed into DSP oled_data9.
+DSP Report: operator oled_data9 is absorbed into DSP oled_data9.
+DSP Report: Generating DSP oled_data8, operation Mode is: A*B.
+DSP Report: operator oled_data8 is absorbed into DSP oled_data8.
+DSP Report: operator oled_data8 is absorbed into DSP oled_data8.
+DSP Report: Generating DSP oled_data8, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data8 is absorbed into DSP oled_data8.
+DSP Report: operator oled_data8 is absorbed into DSP oled_data8.
+DSP Report: Generating DSP oled_data8, operation Mode is: A*B.
+DSP Report: operator oled_data8 is absorbed into DSP oled_data8.
+DSP Report: operator oled_data8 is absorbed into DSP oled_data8.
+DSP Report: Generating DSP oled_data8, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data8 is absorbed into DSP oled_data8.
+DSP Report: operator oled_data8 is absorbed into DSP oled_data8.
+DSP Report: Generating DSP oled_data7, operation Mode is: A*B.
+DSP Report: operator oled_data7 is absorbed into DSP oled_data7.
+DSP Report: operator oled_data7 is absorbed into DSP oled_data7.
+DSP Report: Generating DSP oled_data7, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data7 is absorbed into DSP oled_data7.
+DSP Report: operator oled_data7 is absorbed into DSP oled_data7.
+DSP Report: Generating DSP oled_data7, operation Mode is: A*B.
+DSP Report: operator oled_data7 is absorbed into DSP oled_data7.
+DSP Report: operator oled_data7 is absorbed into DSP oled_data7.
+DSP Report: Generating DSP oled_data7, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data7 is absorbed into DSP oled_data7.
+DSP Report: operator oled_data7 is absorbed into DSP oled_data7.
+DSP Report: Generating DSP oled_data6, operation Mode is: A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is: A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is: A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is: A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data5, operation Mode is: A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data14, operation Mode is: A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is: A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+INFO: [Synth 8-5545] ROM "clk0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'count2_reg[5:0]' into 'count2_reg[5:0]' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+INFO: [Synth 8-4471] merging register 'count2_reg[5:0]' into 'count2_reg[5:0]' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+INFO: [Synth 8-4471] merging register 'count2_reg[5:0]' into 'count2_reg[5:0]' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+INFO: [Synth 8-4471] merging register 'count2_reg[5:0]' into 'count2_reg[5:0]' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+INFO: [Synth 8-4471] merging register 'count2_reg[5:0]' into 'count2_reg[5:0]' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+INFO: [Synth 8-4471] merging register 'count2_reg[5:0]' into 'count2_reg[5:0]' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+INFO: [Synth 8-4471] merging register 'count2_reg[5:0]' into 'count2_reg[5:0]' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+INFO: [Synth 8-4471] merging register 'count2_reg[5:0]' into 'count2_reg[5:0]' [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+WARNING: [Synth 8-6014] Unused sequential element count2_reg was removed.  [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+WARNING: [Synth 8-6014] Unused sequential element count2_reg was removed.  [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+WARNING: [Synth 8-6014] Unused sequential element count2_reg was removed.  [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+WARNING: [Synth 8-6014] Unused sequential element count2_reg was removed.  [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+WARNING: [Synth 8-6014] Unused sequential element count2_reg was removed.  [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+WARNING: [Synth 8-6014] Unused sequential element count2_reg was removed.  [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+WARNING: [Synth 8-6014] Unused sequential element count2_reg was removed.  [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+WARNING: [Synth 8-6014] Unused sequential element count2_reg was removed.  [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/enlarging_man.v:44]
+INFO: [Synth 8-5545] ROM "unit2/clk0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/heart.v:76]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/heart.v:76]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/heart.v:62]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/heart.v:62]
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+INFO: [Synth 8-5545] ROM "clk0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/secret_mode.v:86]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/secret_mode.v:103]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/secret_mode.v:103]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.srcs/sources_1/new/secret_mode.v:137]
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data5, operation Mode is: A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+INFO: [Synth 8-5545] ROM "unit2/clk0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "unit2/clk0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "count10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "uut/count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "led" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk20hz/clk20k0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design to_secret has unconnected port mode[4]
+WARNING: [Synth 8-3331] design to_secret has unconnected port mode[3]
+WARNING: [Synth 8-3331] design to_secret has unconnected port mode[2]
+WARNING: [Synth 8-3331] design to_secret has unconnected port mode[1]
+WARNING: [Synth 8-3331] design to_secret has unconnected port mode[0]
+WARNING: [Synth 8-3331] design welcome has unconnected port mode[4]
+WARNING: [Synth 8-3331] design welcome has unconnected port mode[3]
+WARNING: [Synth 8-3331] design welcome has unconnected port mode[2]
+WARNING: [Synth 8-3331] design welcome has unconnected port mode[1]
+WARNING: [Synth 8-3331] design welcome has unconnected port mode[0]
+INFO: [Synth 8-3886] merging instance 'secret/data_reg[0]' (FD) to 'secret/data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'improvise/data_reg[0]' (FDE) to 'improvise/data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'message1/oled_data_reg[0]' (FDS) to 'message1/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'he/oled_data_reg[0]' (FDRE) to 'he/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'message/oled_data_reg[0]' (FDSE) to 'message/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'invert/oled_data_reg[0]' (FDSE) to 'invert/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'invert1/oled_data_reg[0]' (FDRE) to 'invert1/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'disp/oled_data_reg[0]' (FDRE) to 'disp/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'improvise/data_reg[1]' (FDE) to 'improvise/data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'message1/oled_data_reg[1]' (FDS) to 'message1/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'man/oled_data_reg[1]' (FD) to 'man/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'he/oled_data_reg[1]' (FDRE) to 'he/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'message/oled_data_reg[1]' (FDSE) to 'message/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'invert/oled_data_reg[1]' (FDSE) to 'invert/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'invert1/oled_data_reg[1]' (FDRE) to 'invert1/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'disp/oled_data_reg[1]' (FDRE) to 'disp/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'message1/oled_data_reg[2]' (FDS) to 'message1/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'he/oled_data_reg[2]' (FDRE) to 'he/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'message/oled_data_reg[2]' (FDSE) to 'message/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'invert/oled_data_reg[2]' (FDSE) to 'invert/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'disp/oled_data_reg[2]' (FDRE) to 'disp/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'message1/oled_data_reg[3]' (FDS) to 'message1/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'message/oled_data_reg[3]' (FDSE) to 'message/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'invert/oled_data_reg[3]' (FDSE) to 'invert/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'invert1/oled_data_reg[3]' (FDRE) to 'invert1/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'disp/oled_data_reg[3]' (FDRE) to 'disp/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'message1/oled_data_reg[4]' (FDS) to 'message1/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'message/oled_data_reg[4]' (FDSE) to 'message/oled_data_reg[15]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (invert/\oled_data_reg[4] )
+INFO: [Synth 8-3886] merging instance 'invert1/oled_data_reg[4]' (FDSE) to 'invert1/oled_data_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (disp/\oled_data_reg[4] )
+INFO: [Synth 8-3886] merging instance 'improvise/data_reg[5]' (FDE) to 'improvise/data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'message1/oled_data_reg[5]' (FDS) to 'message1/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'he/oled_data_reg[5]' (FDRE) to 'he/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'message/oled_data_reg[5]' (FDSE) to 'message/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'invert/oled_data_reg[5]' (FDSE) to 'invert/oled_data_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (invert1/\oled_data_reg[5] )
+INFO: [Synth 8-3886] merging instance 'disp/oled_data_reg[5]' (FDRE) to 'disp/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'improvise/data_reg[6]' (FDE) to 'improvise/data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'message1/oled_data_reg[6]' (FDS) to 'message1/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'man/oled_data_reg[6]' (FD) to 'man/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'he/oled_data_reg[6]' (FDRE) to 'he/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'message/oled_data_reg[6]' (FDSE) to 'message/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'invert/oled_data_reg[6]' (FDSE) to 'invert/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'invert1/oled_data_reg[6]' (FDRE) to 'invert1/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'disp/oled_data_reg[6]' (FDRE) to 'disp/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'improvise/data_reg[7]' (FDE) to 'improvise/data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'message1/oled_data_reg[7]' (FDS) to 'message1/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'he/oled_data_reg[7]' (FDRE) to 'he/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'message/oled_data_reg[7]' (FDSE) to 'message/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'invert/oled_data_reg[7]' (FDSE) to 'invert/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'invert1/oled_data_reg[7]' (FDSE) to 'invert1/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'disp/oled_data_reg[7]' (FDRE) to 'disp/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'improvise/data_reg[8]' (FDE) to 'improvise/data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'message1/oled_data_reg[8]' (FDS) to 'message1/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'he/oled_data_reg[8]' (FDRE) to 'he/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'message/oled_data_reg[8]' (FDSE) to 'message/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'invert/oled_data_reg[8]' (FDSE) to 'invert/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'invert1/oled_data_reg[8]' (FDSE) to 'invert1/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'disp/oled_data_reg[8]' (FDRE) to 'disp/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'message1/oled_data_reg[9]' (FDS) to 'message1/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'message/oled_data_reg[9]' (FDSE) to 'message/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'invert/oled_data_reg[9]' (FDSE) to 'invert/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'disp/oled_data_reg[9]' (FDRE) to 'disp/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'message1/oled_data_reg[10]' (FDS) to 'message1/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'message/oled_data_reg[10]' (FDSE) to 'message/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'improvise/data_reg[11]' (FDE) to 'improvise/data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'secret/unit1/m_reg[1]' (FD) to 'secret/unit1/m_reg[5]'
+INFO: [Synth 8-3886] merging instance 'man/unit1/m_reg[1]' (FD) to 'man/unit1/m_reg[5]'
+INFO: [Synth 8-3886] merging instance 'he/unit1/m_reg[1]' (FD) to 'he/unit1/m_reg[5]'
+INFO: [Synth 8-3886] merging instance 'improvise/unit1/m_reg[1]' (FD) to 'improvise/unit1/m_reg[5]'
+INFO: [Synth 8-3886] merging instance 'message1/oled_data_reg[11]' (FDS) to 'message1/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'he/oled_data_reg[11]' (FDSE) to 'he/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'message/oled_data_reg[11]' (FDSE) to 'message/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'invert/oled_data_reg[11]' (FDSE) to 'invert/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'disp/oled_data_reg[11]' (FDRE) to 'disp/oled_data_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (improvise/\data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (secret/\unit1/m_reg[4] )
+INFO: [Synth 8-3886] merging instance 'secret/unit1/m_reg[10]' (FD) to 'secret/unit1/m_reg[15]'
+INFO: [Synth 8-3886] merging instance 'secret/unit1/m_reg[14]' (FD) to 'secret/unit1/m_reg[18]'
+INFO: [Synth 8-3886] merging instance 'secret/unit1/m_reg[18]' (FD) to 'secret/unit1/m_reg[22]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (man/\unit1/m_reg[4] )
+INFO: [Synth 8-3886] merging instance 'man/unit1/m_reg[10]' (FD) to 'man/unit1/m_reg[15]'
+INFO: [Synth 8-3886] merging instance 'man/unit1/m_reg[14]' (FD) to 'man/unit1/m_reg[18]'
+INFO: [Synth 8-3886] merging instance 'man/unit1/m_reg[18]' (FD) to 'man/unit1/m_reg[22]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (he/\unit1/m_reg[4] )
+INFO: [Synth 8-3886] merging instance 'he/unit1/m_reg[10]' (FD) to 'he/unit1/m_reg[15]'
+INFO: [Synth 8-3886] merging instance 'he/unit1/m_reg[14]' (FD) to 'he/unit1/m_reg[18]'
+INFO: [Synth 8-3886] merging instance 'he/unit1/m_reg[18]' (FD) to 'he/unit1/m_reg[22]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (improvise/unit1/\m_reg[4] )
+INFO: [Synth 8-3886] merging instance 'improvise/unit1/m_reg[10]' (FD) to 'improvise/unit1/m_reg[15]'
+INFO: [Synth 8-3886] merging instance 'improvise/unit1/m_reg[14]' (FD) to 'improvise/unit1/m_reg[18]'
+INFO: [Synth 8-3886] merging instance 'improvise/unit1/m_reg[18]' (FD) to 'improvise/unit1/m_reg[22]'
+INFO: [Synth 8-3886] merging instance 'message1/oled_data_reg[12]' (FDS) to 'message1/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'he/oled_data_reg[12]' (FDSE) to 'he/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'message/oled_data_reg[12]' (FDSE) to 'message/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'invert/oled_data_reg[12]' (FDSE) to 'invert/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'invert1/oled_data_reg[12]' (FDRE) to 'invert1/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'disp/oled_data_reg[12]' (FDRE) to 'disp/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'keyboard/position_reg[31]' (FDE) to 'keyboard/position_reg[2]'
+INFO: [Synth 8-3886] merging instance 'keyboard/position_reg[30]' (FDE) to 'keyboard/position_reg[2]'
+INFO: [Synth 8-3886] merging instance 'keyboard/position_reg[29]' (FDE) to 'keyboard/position_reg[2]'
+INFO: [Synth 8-3886] merging instance 'keyboard/position_reg[28]' (FDE) to 'keyboard/position_reg[2]'
+INFO: [Synth 8-3886] merging instance 'keyboard/position_reg[27]' (FDE) to 'keyboard/position_reg[2]'
+INFO: [Synth 8-3886] merging instance 'keyboard/position_reg[26]' (FDE) to 'keyboard/position_reg[2]'
+INFO: [Synth 8-3886] merging instance 'keyboard/position_reg[25]' (FDE) to 'keyboard/position_reg[2]'
+INFO: [Synth 8-3886] merging instance 'keyboard/position_reg[24]' (FDE) to 'keyboard/position_reg[2]'
+INFO: [Synth 8-3886] merging instance 'keyboard/position_reg[23]' (FDE) to 'keyboard/position_reg[2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\position_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (scroll/\seg0_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (unit2/\seg2_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (unit2/\seg1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (improvise/\data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\seg3_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\seg2_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\seg1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\seg0_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (keyboard/\seg3_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (keyboard/\seg2_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (keyboard/\seg1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (keyboard/\seg0_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (unit1/\MAX_reg[13] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (scroll/\display1/seg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\seg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (keyboard/\seg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (unit1/\maxvalue_reg[13] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (scroll/\seg_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (MAX_reg[13]) is unused and will be removed from module slow_clock10Hz.
+WARNING: [Synth 8-3332] Sequential element (maxvalue_reg[13]) is unused and will be removed from module slow_clock10Hz.
+WARNING: [Synth 8-3332] Sequential element (seg1_reg[7]) is unused and will be removed from module SevenSegment_LastTwo.
+WARNING: [Synth 8-3332] Sequential element (seg2_reg[7]) is unused and will be removed from module SevenSegment_LastTwo.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[4]) is unused and will be removed from module basic_oled.
+WARNING: [Synth 8-3332] Sequential element (m_reg[4]) is unused and will be removed from module sun_move.
+WARNING: [Synth 8-3332] Sequential element (data_reg[15]) is unused and will be removed from module improve_oled.
+WARNING: [Synth 8-3332] Sequential element (data_reg[12]) is unused and will be removed from module improve_oled.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[4]) is unused and will be removed from module basic_invert.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[5]) is unused and will be removed from module basic_invert1.
+WARNING: [Synth 8-3332] Sequential element (unit1/m_reg[4]) is unused and will be removed from module enlarging_man.
+WARNING: [Synth 8-3332] Sequential element (unit1/m_reg[4]) is unused and will be removed from module heart.
+WARNING: [Synth 8-3332] Sequential element (unit1/m_reg[4]) is unused and will be removed from module secret_mode.
+WARNING: [Synth 8-3332] Sequential element (display1/seg_reg[7]) is unused and will be removed from module Scroll_Seg.
+WARNING: [Synth 8-3332] Sequential element (seg_reg[7]) is unused and will be removed from module Scroll_Seg.
+WARNING: [Synth 8-3332] Sequential element (seg0_reg[7]) is unused and will be removed from module Scroll_Seg.
+WARNING: [Synth 8-3332] Sequential element (uut/keycode_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/keycode_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/keycode_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/keycode_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/keycode_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/keycode_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/keycode_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/keycode_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seg0_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seg0_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seg1_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seg1_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seg2_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seg2_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seg3_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seg3_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seg_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seg_reg[6]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:38 ; elapsed = 00:02:44 . Memory (MB): peak = 804.746 ; gain = 547.859
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3323] Resources of type DSP have been overutilized. Used = 155, Available = 90. Use report_utilization command for details.
+DSP Report: Generating DSP oled_data6, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data5, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data14, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data13, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data13 is absorbed into DSP oled_data13.
+DSP Report: operator oled_data13 is absorbed into DSP oled_data13.
+DSP Report: Generating DSP oled_data13, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data13 is absorbed into DSP oled_data13.
+DSP Report: operator oled_data13 is absorbed into DSP oled_data13.
+DSP Report: Generating DSP oled_data13, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data13 is absorbed into DSP oled_data13.
+DSP Report: operator oled_data13 is absorbed into DSP oled_data13.
+DSP Report: Generating DSP oled_data12, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data12 is absorbed into DSP oled_data12.
+DSP Report: operator oled_data12 is absorbed into DSP oled_data12.
+DSP Report: Generating DSP oled_data12, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data12 is absorbed into DSP oled_data12.
+DSP Report: operator oled_data12 is absorbed into DSP oled_data12.
+DSP Report: Generating DSP oled_data12, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data12 is absorbed into DSP oled_data12.
+DSP Report: operator oled_data12 is absorbed into DSP oled_data12.
+DSP Report: Generating DSP oled_data11, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: Generating DSP oled_data11, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: Generating DSP oled_data11, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: operator oled_data11 is absorbed into DSP oled_data11.
+DSP Report: Generating DSP oled_data9, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data9 is absorbed into DSP oled_data9.
+DSP Report: operator oled_data9 is absorbed into DSP oled_data9.
+DSP Report: Generating DSP oled_data9, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data9 is absorbed into DSP oled_data9.
+DSP Report: operator oled_data9 is absorbed into DSP oled_data9.
+DSP Report: Generating DSP oled_data8, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data8 is absorbed into DSP oled_data8.
+DSP Report: operator oled_data8 is absorbed into DSP oled_data8.
+DSP Report: Generating DSP oled_data8, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data8 is absorbed into DSP oled_data8.
+DSP Report: operator oled_data8 is absorbed into DSP oled_data8.
+DSP Report: Generating DSP oled_data7, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data7 is absorbed into DSP oled_data7.
+DSP Report: operator oled_data7 is absorbed into DSP oled_data7.
+DSP Report: Generating DSP oled_data7, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data7 is absorbed into DSP oled_data7.
+DSP Report: operator oled_data7 is absorbed into DSP oled_data7.
+DSP Report: Generating DSP oled_data6, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data6, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: operator oled_data6 is absorbed into DSP oled_data6.
+DSP Report: Generating DSP oled_data5, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data14, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data14, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: operator oled_data14 is absorbed into DSP oled_data14.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data5, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------------+------------+---------------+----------------+
+|Module Name          | RTL Object | Depth x Width | Implemented As | 
++---------------------+------------+---------------+----------------+
+|SevenSegment_LastTwo | seg0       | 32x8          | LUT            | 
+|SevenSegment_LastTwo | seg3       | 32x8          | LUT            | 
+|SevenSegment_LastTwo | seg0       | 32x8          | LUT            | 
+|SevenSegment_LastTwo | seg3       | 32x8          | LUT            | 
+|Scroll_Seg           | seg0       | 128x8         | LUT            | 
+|Scroll_Seg           | seg1       | 128x8         | LUT            | 
+|Scroll_Seg           | seg2       | 128x8         | LUT            | 
+|Scroll_Seg           | seg3       | 128x8         | LUT            | 
++---------------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|improve_oled | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|improve_oled | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|heart        | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|secret_mode  | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:19 ; elapsed = 00:03:27 . Memory (MB): peak = 837.234 ; gain = 580.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:14 ; elapsed = 00:04:23 . Memory (MB): peak = 1006.496 ; gain = 749.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (man/count4_reg[5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (man/count3_reg[5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (man/count2_reg[5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (man/count2_reg[4]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (man/count2_reg[3]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (man/count2_reg[2]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (man/count1_reg[5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (man/count1_reg[2]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (man/count1_reg[1]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (man/count1_reg[0]) is unused and will be removed from module Top_Student.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:49 ; elapsed = 00:04:58 . Memory (MB): peak = 1289.305 ; gain = 1032.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net n_0_12199 is driving 66 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_9344 is driving 72 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_11752 is driving 66 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_12219 is driving 66 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_12385 is driving 70 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net \improvise/oled_data13__2 [16] is driving 66 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_11865 is driving 66 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_11893 is driving 66 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:52 ; elapsed = 00:05:01 . Memory (MB): peak = 1289.305 ; gain = 1032.418
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:53 ; elapsed = 00:05:01 . Memory (MB): peak = 1289.305 ; gain = 1032.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:58 ; elapsed = 00:05:06 . Memory (MB): peak = 1289.305 ; gain = 1032.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:58 ; elapsed = 00:05:06 . Memory (MB): peak = 1289.305 ; gain = 1032.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:58 ; elapsed = 00:05:07 . Memory (MB): peak = 1289.305 ; gain = 1032.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:58 ; elapsed = 00:05:07 . Memory (MB): peak = 1289.305 ; gain = 1032.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     4|
+|2     |CARRY4  |  2391|
+|3     |DSP48E1 |    74|
+|4     |LUT1    |   419|
+|5     |LUT2    |  3499|
+|6     |LUT3    |  1447|
+|7     |LUT4    |  1584|
+|8     |LUT5    |  1589|
+|9     |LUT6    |  2895|
+|10    |MUXF7   |    46|
+|11    |MUXF8   |     1|
+|12    |FDRE    |  1252|
+|13    |FDRE_1  |    31|
+|14    |FDSE    |    25|
+|15    |FDSE_1  |     1|
+|16    |IBUF    |    13|
+|17    |OBUF    |    37|
++------+--------+------+
+
+Report Instance Areas: 
++------+--------------+---------------------+------+
+|      |Instance      |Module               |Cells |
++------+--------------+---------------------+------+
+|1     |top           |                     | 15308|
+|2     |  clk20hz     |clk_voice            |    22|
+|3     |  disp        |basic_oled           |    80|
+|4     |  he          |heart                |  1588|
+|5     |    unit2     |sun_clk_10           |    46|
+|6     |  improvise   |improve_oled         |  7218|
+|7     |    unit1     |sun_move_8           |    64|
+|8     |    unit2     |sun_clk_9            |    43|
+|9     |  invert      |basic_invert         |    84|
+|10    |  invert1     |basic_invert1        |   308|
+|11    |  keyboard    |top                  |   525|
+|12    |    uut       |PS2Receiver          |   138|
+|13    |      db_clk  |debouncer            |    15|
+|14    |      db_data |debouncer_7          |    16|
+|15    |  man         |enlarging_man        |   982|
+|16    |    unit2     |sun_clk_4            |    46|
+|17    |    unit3     |sun_clk_5            |    53|
+|18    |    unit4     |sun_clk_6            |    53|
+|19    |  message     |welcome              |   284|
+|20    |    unit2     |sun_clk_3            |    46|
+|21    |  message1    |to_secret            |   118|
+|22    |    unit2     |sun_clk_2            |    46|
+|23    |  scroll      |Scroll_Seg           |   320|
+|24    |    display1  |SevenSegDisplay_1    |   105|
+|25    |  secret      |secret_mode          |   969|
+|26    |    unit1     |sun_move             |    47|
+|27    |    unit2     |sun_clk              |    46|
+|28    |  sp          |single_pulse         |    40|
+|29    |    dff1      |dff                  |     2|
+|30    |    dff2      |dff_0                |     2|
+|31    |    slow      |sp_clk               |    36|
+|32    |  unit        |Audio_Capture        |    67|
+|33    |  unit1       |slow_clock10Hz       |   150|
+|34    |  unit2       |SevenSegment_LastTwo |   156|
+|35    |    display   |SevenSegDisplay      |   107|
+|36    |  unit4       |clk_oled             |     9|
+|37    |  unit5       |Oled_Display         |   485|
++------+--------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:58 ; elapsed = 00:05:07 . Memory (MB): peak = 1289.305 ; gain = 1032.418
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:29 ; elapsed = 00:04:44 . Memory (MB): peak = 1289.305 ; gain = 673.121
+Synthesis Optimization Complete : Time (s): cpu = 00:04:58 ; elapsed = 00:05:07 . Memory (MB): peak = 1289.305 ; gain = 1032.418
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2557 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  FDRE_1 => FDRE (inverted pins: C): 31 instances
+  FDSE_1 => FDSE (inverted pins: C): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+343 Infos, 104 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:06 ; elapsed = 00:05:16 . Memory (MB): peak = 1289.305 ; gain = 1045.238
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.137 . Memory (MB): peak = 1289.305 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  4 12:29:49 2020...

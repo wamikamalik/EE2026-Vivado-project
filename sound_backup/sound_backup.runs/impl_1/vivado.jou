@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Apr  4 12:30:03 2020
+# Process ID: 20384
+# Current directory: C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.runs/impl_1
+# Command line: vivado.exe -log Top_Student.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Top_Student.tcl -notrace
+# Log file: C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.runs/impl_1/Top_Student.vdi
+# Journal file: C:/Users/wamik/Documents/My notes sem 2/EE2026/Lab and Project - Materials and S/sound_backup/sound_backup.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Top_Student.tcl -notrace

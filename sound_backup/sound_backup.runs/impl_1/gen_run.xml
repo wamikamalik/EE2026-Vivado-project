@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1585974256">
+  <File Type="ROUTE-PWR" Name="Top_Student_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Top_Student.tcl"/>
+  <File Type="BITSTR-BMM" Name="Top_Student_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="Top_Student_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Top_Student_reports.tcl"/>
+  <File Type="OPT-DCP" Name="Top_Student_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Top_Student_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Top_Student.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Top_Student_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="Top_Student_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Top_Student_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Top_Student_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Top_Student_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Top_Student_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Top_Student_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="Top_Student.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Top_Student_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Top_Student.bin"/>
+  <File Type="PHYSOPT-DCP" Name="Top_Student_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="Top_Student.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Top_Student_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Top_Student_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Top_Student_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Top_Student_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Top_Student_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Top_Student_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="Top_Student.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Top_Student_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="Top_Student.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Top_Student_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Top_Student_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="Top_Student.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="Top_Student_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Top_Student_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Top_Student_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Top_Student_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Top_Student_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Top_Student_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="Top_Student_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Top_Student_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Top_Student_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Top_Student_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Top_Student_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Top_Student_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="Top_Student.bit"/>
+  <File Type="BITSTR-RBT" Name="Top_Student.rbt"/>
+  <File Type="BITSTR-NKY" Name="Top_Student.nky"/>
+  <File Type="BG-DRC" Name="Top_Student.drc"/>
+  <File Type="RDI-RDI" Name="Top_Student.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Audio_Capture.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../SoundDisplay - Copy/SoundDisplay.srcs/sources_1/new/Audio_Capture.v"/>
+        <Attr Name="ImportTime" Val="1570395503"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Oled_Display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../SoundDisplay - Copy/SoundDisplay.srcs/sources_1/new/Oled_Display.v"/>
+        <Attr Name="ImportTime" Val="1570395512"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_oled.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../SoundDisplay - Copy/SoundDisplay.srcs/sources_1/new/clk_oled.v"/>
+        <Attr Name="ImportTime" Val="1583744056"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_voice.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../SoundDisplay - Copy/SoundDisplay.srcs/sources_1/new/clk_voice.v"/>
+        <Attr Name="ImportTime" Val="1583738219"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Top_Student.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../SoundDisplay - Copy/SoundDisplay.srcs/sources_1/new/Top_Student.v"/>
+        <Attr Name="ImportTime" Val="1570395690"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/single_pulse.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../SoundDisplay - Copy/SoundDisplay.srcs/sources_1/new/single_pulse.v"/>
+        <Attr Name="ImportTime" Val="1583740464"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dff.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../SoundDisplay - Copy/SoundDisplay.srcs/sources_1/new/dff.v"/>
+        <Attr Name="ImportTime" Val="1583740518"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sp_clk.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../SoundDisplay - Copy/SoundDisplay.srcs/sources_1/new/sp_clk.v"/>
+        <Attr Name="ImportTime" Val="1583740468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/slow_clock10Hz.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/slow_clock10Hz.v"/>
+        <Attr Name="ImportTime" Val="1584615887"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SevenSegDisplay.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/SevenSegDisplay.v"/>
+        <Attr Name="ImportTime" Val="1585573874"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SevenSegment_LastTwo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/SevenSegment_LastTwo.v"/>
+        <Attr Name="ImportTime" Val="1585573811"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/basic_oled.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/basic_oled.v"/>
+        <Attr Name="ImportTime" Val="1585490981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/improve_oled.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/improve_oled.v"/>
+        <Attr Name="ImportTime" Val="1585929320"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sun_move.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/sun_move.v"/>
+        <Attr Name="ImportTime" Val="1585463709"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sun_clk.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/sun_clk.v"/>
+        <Attr Name="ImportTime" Val="1585458999"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/basic_invert.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/basic_invert.v"/>
+        <Attr Name="ImportTime" Val="1585491017"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/enlarging_man.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/enlarging_man.v"/>
+        <Attr Name="ImportTime" Val="1585929390"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/heart.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/heart.v"/>
+        <Attr Name="ImportTime" Val="1585917622"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/secret_mode.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/secret_mode.v"/>
+        <Attr Name="ImportTime" Val="1585919582"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/welcome.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/welcome.v"/>
+        <Attr Name="ImportTime" Val="1585919135"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/to_secret.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/to_secret.v"/>
+        <Attr Name="ImportTime" Val="1585927632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Scroll_Seg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/Scroll_Seg.v"/>
+        <Attr Name="ImportTime" Val="1585752784"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/top.v"/>
+        <Attr Name="ImportTime" Val="1585974155"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/debouncer.v"/>
+        <Attr Name="ImportTime" Val="1585800038"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PS2Receiver.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/PS2Receiver.v"/>
+        <Attr Name="ImportTime" Val="1585812517"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/basic_invert1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sound_backup.srcs/sources_1/new/basic_invert1.v"/>
+        <Attr Name="ImportTime" Val="1585969933"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Top_Student"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../SoundDisplay - Copy/SoundDisplay.srcs/constrs_1/new/constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1584339765"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

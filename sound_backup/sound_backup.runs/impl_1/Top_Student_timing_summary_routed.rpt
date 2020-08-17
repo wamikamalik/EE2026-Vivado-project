@@ -1,0 +1,1947 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  4 12:36:53 2020
+| Host         : DESKTOP-NCK7F8R running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file Top_Student_timing_summary_routed.rpt -pb Top_Student_timing_summary_routed.pb -rpx Top_Student_timing_summary_routed.rpx -warn_on_violation
+| Design       : Top_Student
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.22 2018-03-21
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 12 register/latch pins with no clock driven by root clock pin: clk20hz/clk20k_reg/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: he/unit2/clk_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: improvise/unit2/clk_reg/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: keyboard/CLK50MHZ_reg/Q (HIGH)
+
+ There are 45 register/latch pins with no clock driven by root clock pin: keyboard/uut/db_clk/O_reg/Q (HIGH)
+
+ There are 52 register/latch pins with no clock driven by root clock pin: keyboard/uut/oflag_reg/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: man/unit2/clk_reg/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: man/unit3/clk_reg/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: man/unit4/clk_reg/Q (HIGH)
+
+ There are 6 register/latch pins with no clock driven by root clock pin: message/unit2/clk_reg/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: message1/unit2/clk_reg/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: secret/unit2/clk_reg/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: sp/slow/clk_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: unit/sclk_reg/Q (HIGH)
+
+ There are 115 register/latch pins with no clock driven by root clock pin: unit4/clk6p25m_reg/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 627 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 12 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 37 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+    -10.900     -647.560                    102                 1516        0.140        0.000                      0                 1516        4.500        0.000                       0                  1052  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin       -10.900     -647.560                    102                 1516        0.140        0.000                      0                 1516        4.500        0.000                       0                  1052  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :          102  Failing Endpoints,  Worst Slack      -10.900ns,  Total Violation     -647.560ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.140ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -10.900ns  (required time - arrival time)
+  Source:                 x_reg[2]_rep__9/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            secret/oled_data_reg[12]/CE
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        20.684ns  (logic 8.773ns (42.415%)  route 11.911ns (57.585%))
+  Logic Levels:           25  (CARRY4=12 LUT2=5 LUT3=2 LUT4=1 LUT6=5)
+  Clock Path Skew:        0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.855ns = ( 14.855 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.091ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.570     5.091    CLOCK_IBUF_BUFG
+    SLICE_X51Y41         FDRE                                         r  x_reg[2]_rep__9/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y41         FDRE (Prop_fdre_C_Q)         0.456     5.547 r  x_reg[2]_rep__9/Q
+                         net (fo=121, routed)         0.777     6.325    secret/x_reg[2]_rep__9
+    SLICE_X51Y41         LUT2 (Prop_lut2_I1_O)        0.124     6.449 f  secret/oled_data4_i_5/O
+                         net (fo=35, routed)          0.370     6.819    secret_n_92
+    SLICE_X50Y42         LUT6 (Prop_lut6_I2_O)        0.124     6.943 f  oled_data[15]_i_1126/O
+                         net (fo=68, routed)          0.892     7.835    oled_data[15]_i_1126_n_0
+    SLICE_X57Y42         LUT4 (Prop_lut4_I0_O)        0.124     7.959 r  oled_data[15]_i_1332/O
+                         net (fo=3, routed)           0.834     8.794    oled_data[15]_i_1332_n_0
+    SLICE_X56Y43         LUT6 (Prop_lut6_I3_O)        0.124     8.918 r  oled_data[15]_i_1144/O
+                         net (fo=1, routed)           0.000     8.918    oled_data[15]_i_1144_n_0
+    SLICE_X56Y43         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376     9.294 r  oled_data_reg[15]_i_977/CO[3]
+                         net (fo=1, routed)           0.000     9.294    oled_data_reg[15]_i_977_n_0
+    SLICE_X56Y44         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     9.513 r  oled_data_reg[15]_i_1348/O[0]
+                         net (fo=3, routed)           0.570    10.083    oled_data_reg[15]_i_1348_n_7
+    SLICE_X57Y42         LUT3 (Prop_lut3_I2_O)        0.295    10.378 r  oled_data[15]_i_1194/O
+                         net (fo=1, routed)           0.614    10.992    oled_data[15]_i_1194_n_0
+    SLICE_X57Y44         CARRY4 (Prop_carry4_DI[1]_O[3])
+                                                      0.596    11.588 r  oled_data_reg[15]_i_989/O[3]
+                         net (fo=3, routed)           0.795    12.382    oled_data_reg[15]_i_989_n_4
+    SLICE_X60Y43         LUT3 (Prop_lut3_I0_O)        0.306    12.688 r  oled_data[15]_i_998/O
+                         net (fo=1, routed)           0.706    13.394    oled_data[15]_i_998_n_0
+    SLICE_X54Y43         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.550    13.944 r  oled_data_reg[15]_i_812/CO[3]
+                         net (fo=1, routed)           0.000    13.944    oled_data_reg[15]_i_812_n_0
+    SLICE_X54Y44         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    14.267 r  oled_data_reg[15]_i_984/O[1]
+                         net (fo=1, routed)           0.657    14.924    oled_data_reg[15]_i_984_n_6
+    SLICE_X56Y39         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.884    15.808 r  oled_data_reg[15]_i_779/O[2]
+                         net (fo=2, routed)           0.657    16.466    PCIN[22]
+    SLICE_X55Y43         LUT2 (Prop_lut2_I0_O)        0.301    16.767 r  oled_data[15]_i_782/O
+                         net (fo=1, routed)           0.000    16.767    oled_data[15]_i_782_n_0
+    SLICE_X55Y43         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    17.347 r  oled_data_reg[15]_i_499/O[2]
+                         net (fo=2, routed)           0.602    17.949    p_1_in[23]
+    SLICE_X57Y38         LUT2 (Prop_lut2_I0_O)        0.302    18.251 r  oled_data[15]_i_501/O
+                         net (fo=1, routed)           0.000    18.251    oled_data[15]_i_501_n_0
+    SLICE_X57Y38         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.652 r  oled_data_reg[15]_i_277__0/CO[3]
+                         net (fo=1, routed)           0.000    18.652    oled_data_reg[15]_i_277__0_n_0
+    SLICE_X57Y39         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.986 r  oled_data_reg[15]_i_287/O[1]
+                         net (fo=7, routed)           0.796    19.782    C_0[25]
+    SLICE_X60Y36         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.679    20.461 r  oled_data_reg[7]_i_63/CO[3]
+                         net (fo=1, routed)           0.000    20.461    oled_data_reg[7]_i_63_n_0
+    SLICE_X60Y37         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    20.784 f  oled_data_reg[7]_i_62/O[1]
+                         net (fo=2, routed)           0.643    21.428    secret/x_reg[1]_rep__6_6[1]
+    SLICE_X61Y36         LUT2 (Prop_lut2_I1_O)        0.306    21.734 r  secret/oled_data[7]_i_28/O
+                         net (fo=1, routed)           0.000    21.734    secret/oled_data[7]_i_28_n_0
+    SLICE_X61Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    22.284 r  secret/oled_data_reg[7]_i_13/CO[3]
+                         net (fo=1, routed)           0.856    23.140    secret/oled_data416_in
+    SLICE_X63Y36         LUT6 (Prop_lut6_I1_O)        0.124    23.264 f  secret/oled_data[7]_i_8/O
+                         net (fo=8, routed)           0.475    23.739    secret/oled_data[7]_i_8_n_0
+    SLICE_X63Y36         LUT2 (Prop_lut2_I1_O)        0.124    23.863 f  secret/oled_data[15]_i_35__2/O
+                         net (fo=9, routed)           0.610    24.473    secret/oled_data[15]_i_35__2_n_0
+    SLICE_X63Y33         LUT6 (Prop_lut6_I4_O)        0.124    24.597 r  secret/oled_data[15]_i_9__4/O
+                         net (fo=1, routed)           0.292    24.889    secret/oled_data[15]_i_9__4_n_0
+    SLICE_X63Y32         LUT6 (Prop_lut6_I4_O)        0.124    25.013 r  secret/oled_data[15]_i_2__3/O
+                         net (fo=15, routed)          0.762    25.775    secret/p_0_out
+    SLICE_X63Y35         FDSE                                         r  secret/oled_data_reg[12]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000    10.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.514    14.855    secret/CLOCK_IBUF_BUFG
+    SLICE_X63Y35         FDSE                                         r  secret/oled_data_reg[12]/C
+                         clock pessimism              0.260    15.115    
+                         clock uncertainty           -0.035    15.080    
+    SLICE_X63Y35         FDSE (Setup_fdse_C_CE)      -0.205    14.875    secret/oled_data_reg[12]
+  -------------------------------------------------------------------
+                         required time                         14.875    
+                         arrival time                         -25.775    
+  -------------------------------------------------------------------
+                         slack                                -10.900    
+
+Slack (VIOLATED) :        -10.900ns  (required time - arrival time)
+  Source:                 x_reg[2]_rep__9/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            secret/oled_data_reg[14]/CE
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        20.684ns  (logic 8.773ns (42.415%)  route 11.911ns (57.585%))
+  Logic Levels:           25  (CARRY4=12 LUT2=5 LUT3=2 LUT4=1 LUT6=5)
+  Clock Path Skew:        0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.855ns = ( 14.855 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.091ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.570     5.091    CLOCK_IBUF_BUFG
+    SLICE_X51Y41         FDRE                                         r  x_reg[2]_rep__9/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y41         FDRE (Prop_fdre_C_Q)         0.456     5.547 r  x_reg[2]_rep__9/Q
+                         net (fo=121, routed)         0.777     6.325    secret/x_reg[2]_rep__9
+    SLICE_X51Y41         LUT2 (Prop_lut2_I1_O)        0.124     6.449 f  secret/oled_data4_i_5/O
+                         net (fo=35, routed)          0.370     6.819    secret_n_92
+    SLICE_X50Y42         LUT6 (Prop_lut6_I2_O)        0.124     6.943 f  oled_data[15]_i_1126/O
+                         net (fo=68, routed)          0.892     7.835    oled_data[15]_i_1126_n_0
+    SLICE_X57Y42         LUT4 (Prop_lut4_I0_O)        0.124     7.959 r  oled_data[15]_i_1332/O
+                         net (fo=3, routed)           0.834     8.794    oled_data[15]_i_1332_n_0
+    SLICE_X56Y43         LUT6 (Prop_lut6_I3_O)        0.124     8.918 r  oled_data[15]_i_1144/O
+                         net (fo=1, routed)           0.000     8.918    oled_data[15]_i_1144_n_0
+    SLICE_X56Y43         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376     9.294 r  oled_data_reg[15]_i_977/CO[3]
+                         net (fo=1, routed)           0.000     9.294    oled_data_reg[15]_i_977_n_0
+    SLICE_X56Y44         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     9.513 r  oled_data_reg[15]_i_1348/O[0]
+                         net (fo=3, routed)           0.570    10.083    oled_data_reg[15]_i_1348_n_7
+    SLICE_X57Y42         LUT3 (Prop_lut3_I2_O)        0.295    10.378 r  oled_data[15]_i_1194/O
+                         net (fo=1, routed)           0.614    10.992    oled_data[15]_i_1194_n_0
+    SLICE_X57Y44         CARRY4 (Prop_carry4_DI[1]_O[3])
+                                                      0.596    11.588 r  oled_data_reg[15]_i_989/O[3]
+                         net (fo=3, routed)           0.795    12.382    oled_data_reg[15]_i_989_n_4
+    SLICE_X60Y43         LUT3 (Prop_lut3_I0_O)        0.306    12.688 r  oled_data[15]_i_998/O
+                         net (fo=1, routed)           0.706    13.394    oled_data[15]_i_998_n_0
+    SLICE_X54Y43         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.550    13.944 r  oled_data_reg[15]_i_812/CO[3]
+                         net (fo=1, routed)           0.000    13.944    oled_data_reg[15]_i_812_n_0
+    SLICE_X54Y44         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    14.267 r  oled_data_reg[15]_i_984/O[1]
+                         net (fo=1, routed)           0.657    14.924    oled_data_reg[15]_i_984_n_6
+    SLICE_X56Y39         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.884    15.808 r  oled_data_reg[15]_i_779/O[2]
+                         net (fo=2, routed)           0.657    16.466    PCIN[22]
+    SLICE_X55Y43         LUT2 (Prop_lut2_I0_O)        0.301    16.767 r  oled_data[15]_i_782/O
+                         net (fo=1, routed)           0.000    16.767    oled_data[15]_i_782_n_0
+    SLICE_X55Y43         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    17.347 r  oled_data_reg[15]_i_499/O[2]
+                         net (fo=2, routed)           0.602    17.949    p_1_in[23]
+    SLICE_X57Y38         LUT2 (Prop_lut2_I0_O)        0.302    18.251 r  oled_data[15]_i_501/O
+                         net (fo=1, routed)           0.000    18.251    oled_data[15]_i_501_n_0
+    SLICE_X57Y38         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.652 r  oled_data_reg[15]_i_277__0/CO[3]
+                         net (fo=1, routed)           0.000    18.652    oled_data_reg[15]_i_277__0_n_0
+    SLICE_X57Y39         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.986 r  oled_data_reg[15]_i_287/O[1]
+                         net (fo=7, routed)           0.796    19.782    C_0[25]
+    SLICE_X60Y36         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.679    20.461 r  oled_data_reg[7]_i_63/CO[3]
+                         net (fo=1, routed)           0.000    20.461    oled_data_reg[7]_i_63_n_0
+    SLICE_X60Y37         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    20.784 f  oled_data_reg[7]_i_62/O[1]
+                         net (fo=2, routed)           0.643    21.428    secret/x_reg[1]_rep__6_6[1]
+    SLICE_X61Y36         LUT2 (Prop_lut2_I1_O)        0.306    21.734 r  secret/oled_data[7]_i_28/O
+                         net (fo=1, routed)           0.000    21.734    secret/oled_data[7]_i_28_n_0
+    SLICE_X61Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    22.284 r  secret/oled_data_reg[7]_i_13/CO[3]
+                         net (fo=1, routed)           0.856    23.140    secret/oled_data416_in
+    SLICE_X63Y36         LUT6 (Prop_lut6_I1_O)        0.124    23.264 f  secret/oled_data[7]_i_8/O
+                         net (fo=8, routed)           0.475    23.739    secret/oled_data[7]_i_8_n_0
+    SLICE_X63Y36         LUT2 (Prop_lut2_I1_O)        0.124    23.863 f  secret/oled_data[15]_i_35__2/O
+                         net (fo=9, routed)           0.610    24.473    secret/oled_data[15]_i_35__2_n_0
+    SLICE_X63Y33         LUT6 (Prop_lut6_I4_O)        0.124    24.597 r  secret/oled_data[15]_i_9__4/O
+                         net (fo=1, routed)           0.292    24.889    secret/oled_data[15]_i_9__4_n_0
+    SLICE_X63Y32         LUT6 (Prop_lut6_I4_O)        0.124    25.013 r  secret/oled_data[15]_i_2__3/O
+                         net (fo=15, routed)          0.762    25.775    secret/p_0_out
+    SLICE_X63Y35         FDSE                                         r  secret/oled_data_reg[14]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000    10.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.514    14.855    secret/CLOCK_IBUF_BUFG
+    SLICE_X63Y35         FDSE                                         r  secret/oled_data_reg[14]/C
+                         clock pessimism              0.260    15.115    
+                         clock uncertainty           -0.035    15.080    
+    SLICE_X63Y35         FDSE (Setup_fdse_C_CE)      -0.205    14.875    secret/oled_data_reg[14]
+  -------------------------------------------------------------------
+                         required time                         14.875    
+                         arrival time                         -25.775    
+  -------------------------------------------------------------------
+                         slack                                -10.900    
+
+Slack (VIOLATED) :        -10.900ns  (required time - arrival time)
+  Source:                 x_reg[2]_rep__9/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            secret/oled_data_reg[15]/CE
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        20.684ns  (logic 8.773ns (42.415%)  route 11.911ns (57.585%))
+  Logic Levels:           25  (CARRY4=12 LUT2=5 LUT3=2 LUT4=1 LUT6=5)
+  Clock Path Skew:        0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.855ns = ( 14.855 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.091ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.570     5.091    CLOCK_IBUF_BUFG
+    SLICE_X51Y41         FDRE                                         r  x_reg[2]_rep__9/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y41         FDRE (Prop_fdre_C_Q)         0.456     5.547 r  x_reg[2]_rep__9/Q
+                         net (fo=121, routed)         0.777     6.325    secret/x_reg[2]_rep__9
+    SLICE_X51Y41         LUT2 (Prop_lut2_I1_O)        0.124     6.449 f  secret/oled_data4_i_5/O
+                         net (fo=35, routed)          0.370     6.819    secret_n_92
+    SLICE_X50Y42         LUT6 (Prop_lut6_I2_O)        0.124     6.943 f  oled_data[15]_i_1126/O
+                         net (fo=68, routed)          0.892     7.835    oled_data[15]_i_1126_n_0
+    SLICE_X57Y42         LUT4 (Prop_lut4_I0_O)        0.124     7.959 r  oled_data[15]_i_1332/O
+                         net (fo=3, routed)           0.834     8.794    oled_data[15]_i_1332_n_0
+    SLICE_X56Y43         LUT6 (Prop_lut6_I3_O)        0.124     8.918 r  oled_data[15]_i_1144/O
+                         net (fo=1, routed)           0.000     8.918    oled_data[15]_i_1144_n_0
+    SLICE_X56Y43         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376     9.294 r  oled_data_reg[15]_i_977/CO[3]
+                         net (fo=1, routed)           0.000     9.294    oled_data_reg[15]_i_977_n_0
+    SLICE_X56Y44         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     9.513 r  oled_data_reg[15]_i_1348/O[0]
+                         net (fo=3, routed)           0.570    10.083    oled_data_reg[15]_i_1348_n_7
+    SLICE_X57Y42         LUT3 (Prop_lut3_I2_O)        0.295    10.378 r  oled_data[15]_i_1194/O
+                         net (fo=1, routed)           0.614    10.992    oled_data[15]_i_1194_n_0
+    SLICE_X57Y44         CARRY4 (Prop_carry4_DI[1]_O[3])
+                                                      0.596    11.588 r  oled_data_reg[15]_i_989/O[3]
+                         net (fo=3, routed)           0.795    12.382    oled_data_reg[15]_i_989_n_4
+    SLICE_X60Y43         LUT3 (Prop_lut3_I0_O)        0.306    12.688 r  oled_data[15]_i_998/O
+                         net (fo=1, routed)           0.706    13.394    oled_data[15]_i_998_n_0
+    SLICE_X54Y43         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.550    13.944 r  oled_data_reg[15]_i_812/CO[3]
+                         net (fo=1, routed)           0.000    13.944    oled_data_reg[15]_i_812_n_0
+    SLICE_X54Y44         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    14.267 r  oled_data_reg[15]_i_984/O[1]
+                         net (fo=1, routed)           0.657    14.924    oled_data_reg[15]_i_984_n_6
+    SLICE_X56Y39         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.884    15.808 r  oled_data_reg[15]_i_779/O[2]
+                         net (fo=2, routed)           0.657    16.466    PCIN[22]
+    SLICE_X55Y43         LUT2 (Prop_lut2_I0_O)        0.301    16.767 r  oled_data[15]_i_782/O
+                         net (fo=1, routed)           0.000    16.767    oled_data[15]_i_782_n_0
+    SLICE_X55Y43         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    17.347 r  oled_data_reg[15]_i_499/O[2]
+                         net (fo=2, routed)           0.602    17.949    p_1_in[23]
+    SLICE_X57Y38         LUT2 (Prop_lut2_I0_O)        0.302    18.251 r  oled_data[15]_i_501/O
+                         net (fo=1, routed)           0.000    18.251    oled_data[15]_i_501_n_0
+    SLICE_X57Y38         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.652 r  oled_data_reg[15]_i_277__0/CO[3]
+                         net (fo=1, routed)           0.000    18.652    oled_data_reg[15]_i_277__0_n_0
+    SLICE_X57Y39         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.986 r  oled_data_reg[15]_i_287/O[1]
+                         net (fo=7, routed)           0.796    19.782    C_0[25]
+    SLICE_X60Y36         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.679    20.461 r  oled_data_reg[7]_i_63/CO[3]
+                         net (fo=1, routed)           0.000    20.461    oled_data_reg[7]_i_63_n_0
+    SLICE_X60Y37         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    20.784 f  oled_data_reg[7]_i_62/O[1]
+                         net (fo=2, routed)           0.643    21.428    secret/x_reg[1]_rep__6_6[1]
+    SLICE_X61Y36         LUT2 (Prop_lut2_I1_O)        0.306    21.734 r  secret/oled_data[7]_i_28/O
+                         net (fo=1, routed)           0.000    21.734    secret/oled_data[7]_i_28_n_0
+    SLICE_X61Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    22.284 r  secret/oled_data_reg[7]_i_13/CO[3]
+                         net (fo=1, routed)           0.856    23.140    secret/oled_data416_in
+    SLICE_X63Y36         LUT6 (Prop_lut6_I1_O)        0.124    23.264 f  secret/oled_data[7]_i_8/O
+                         net (fo=8, routed)           0.475    23.739    secret/oled_data[7]_i_8_n_0
+    SLICE_X63Y36         LUT2 (Prop_lut2_I1_O)        0.124    23.863 f  secret/oled_data[15]_i_35__2/O
+                         net (fo=9, routed)           0.610    24.473    secret/oled_data[15]_i_35__2_n_0
+    SLICE_X63Y33         LUT6 (Prop_lut6_I4_O)        0.124    24.597 r  secret/oled_data[15]_i_9__4/O
+                         net (fo=1, routed)           0.292    24.889    secret/oled_data[15]_i_9__4_n_0
+    SLICE_X63Y32         LUT6 (Prop_lut6_I4_O)        0.124    25.013 r  secret/oled_data[15]_i_2__3/O
+                         net (fo=15, routed)          0.762    25.775    secret/p_0_out
+    SLICE_X63Y35         FDSE                                         r  secret/oled_data_reg[15]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000    10.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.514    14.855    secret/CLOCK_IBUF_BUFG
+    SLICE_X63Y35         FDSE                                         r  secret/oled_data_reg[15]/C
+                         clock pessimism              0.260    15.115    
+                         clock uncertainty           -0.035    15.080    
+    SLICE_X63Y35         FDSE (Setup_fdse_C_CE)      -0.205    14.875    secret/oled_data_reg[15]
+  -------------------------------------------------------------------
+                         required time                         14.875    
+                         arrival time                         -25.775    
+  -------------------------------------------------------------------
+                         slack                                -10.900    
+
+Slack (VIOLATED) :        -10.854ns  (required time - arrival time)
+  Source:                 x_reg[2]_rep__9/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            secret/oled_data_reg[13]/CE
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        20.637ns  (logic 8.773ns (42.510%)  route 11.864ns (57.490%))
+  Logic Levels:           25  (CARRY4=12 LUT2=5 LUT3=2 LUT4=1 LUT6=5)
+  Clock Path Skew:        0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.855ns = ( 14.855 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.091ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.570     5.091    CLOCK_IBUF_BUFG
+    SLICE_X51Y41         FDRE                                         r  x_reg[2]_rep__9/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y41         FDRE (Prop_fdre_C_Q)         0.456     5.547 r  x_reg[2]_rep__9/Q
+                         net (fo=121, routed)         0.777     6.325    secret/x_reg[2]_rep__9
+    SLICE_X51Y41         LUT2 (Prop_lut2_I1_O)        0.124     6.449 f  secret/oled_data4_i_5/O
+                         net (fo=35, routed)          0.370     6.819    secret_n_92
+    SLICE_X50Y42         LUT6 (Prop_lut6_I2_O)        0.124     6.943 f  oled_data[15]_i_1126/O
+                         net (fo=68, routed)          0.892     7.835    oled_data[15]_i_1126_n_0
+    SLICE_X57Y42         LUT4 (Prop_lut4_I0_O)        0.124     7.959 r  oled_data[15]_i_1332/O
+                         net (fo=3, routed)           0.834     8.794    oled_data[15]_i_1332_n_0
+    SLICE_X56Y43         LUT6 (Prop_lut6_I3_O)        0.124     8.918 r  oled_data[15]_i_1144/O
+                         net (fo=1, routed)           0.000     8.918    oled_data[15]_i_1144_n_0
+    SLICE_X56Y43         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376     9.294 r  oled_data_reg[15]_i_977/CO[3]
+                         net (fo=1, routed)           0.000     9.294    oled_data_reg[15]_i_977_n_0
+    SLICE_X56Y44         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     9.513 r  oled_data_reg[15]_i_1348/O[0]
+                         net (fo=3, routed)           0.570    10.083    oled_data_reg[15]_i_1348_n_7
+    SLICE_X57Y42         LUT3 (Prop_lut3_I2_O)        0.295    10.378 r  oled_data[15]_i_1194/O
+                         net (fo=1, routed)           0.614    10.992    oled_data[15]_i_1194_n_0
+    SLICE_X57Y44         CARRY4 (Prop_carry4_DI[1]_O[3])
+                                                      0.596    11.588 r  oled_data_reg[15]_i_989/O[3]
+                         net (fo=3, routed)           0.795    12.382    oled_data_reg[15]_i_989_n_4
+    SLICE_X60Y43         LUT3 (Prop_lut3_I0_O)        0.306    12.688 r  oled_data[15]_i_998/O
+                         net (fo=1, routed)           0.706    13.394    oled_data[15]_i_998_n_0
+    SLICE_X54Y43         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.550    13.944 r  oled_data_reg[15]_i_812/CO[3]
+                         net (fo=1, routed)           0.000    13.944    oled_data_reg[15]_i_812_n_0
+    SLICE_X54Y44         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    14.267 r  oled_data_reg[15]_i_984/O[1]
+                         net (fo=1, routed)           0.657    14.924    oled_data_reg[15]_i_984_n_6
+    SLICE_X56Y39         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.884    15.808 r  oled_data_reg[15]_i_779/O[2]
+                         net (fo=2, routed)           0.657    16.466    PCIN[22]
+    SLICE_X55Y43         LUT2 (Prop_lut2_I0_O)        0.301    16.767 r  oled_data[15]_i_782/O
+                         net (fo=1, routed)           0.000    16.767    oled_data[15]_i_782_n_0
+    SLICE_X55Y43         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    17.347 r  oled_data_reg[15]_i_499/O[2]
+                         net (fo=2, routed)           0.602    17.949    p_1_in[23]
+    SLICE_X57Y38         LUT2 (Prop_lut2_I0_O)        0.302    18.251 r  oled_data[15]_i_501/O
+                         net (fo=1, routed)           0.000    18.251    oled_data[15]_i_501_n_0
+    SLICE_X57Y38         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.652 r  oled_data_reg[15]_i_277__0/CO[3]
+                         net (fo=1, routed)           0.000    18.652    oled_data_reg[15]_i_277__0_n_0
+    SLICE_X57Y39         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.986 r  oled_data_reg[15]_i_287/O[1]
+                         net (fo=7, routed)           0.796    19.782    C_0[25]
+    SLICE_X60Y36         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.679    20.461 r  oled_data_reg[7]_i_63/CO[3]
+                         net (fo=1, routed)           0.000    20.461    oled_data_reg[7]_i_63_n_0
+    SLICE_X60Y37         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    20.784 f  oled_data_reg[7]_i_62/O[1]
+                         net (fo=2, routed)           0.643    21.428    secret/x_reg[1]_rep__6_6[1]
+    SLICE_X61Y36         LUT2 (Prop_lut2_I1_O)        0.306    21.734 r  secret/oled_data[7]_i_28/O
+                         net (fo=1, routed)           0.000    21.734    secret/oled_data[7]_i_28_n_0
+    SLICE_X61Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    22.284 r  secret/oled_data_reg[7]_i_13/CO[3]
+                         net (fo=1, routed)           0.856    23.140    secret/oled_data416_in
+    SLICE_X63Y36         LUT6 (Prop_lut6_I1_O)        0.124    23.264 f  secret/oled_data[7]_i_8/O
+                         net (fo=8, routed)           0.475    23.739    secret/oled_data[7]_i_8_n_0
+    SLICE_X63Y36         LUT2 (Prop_lut2_I1_O)        0.124    23.863 f  secret/oled_data[15]_i_35__2/O
+                         net (fo=9, routed)           0.610    24.473    secret/oled_data[15]_i_35__2_n_0
+    SLICE_X63Y33         LUT6 (Prop_lut6_I4_O)        0.124    24.597 r  secret/oled_data[15]_i_9__4/O
+                         net (fo=1, routed)           0.292    24.889    secret/oled_data[15]_i_9__4_n_0
+    SLICE_X63Y32         LUT6 (Prop_lut6_I4_O)        0.124    25.013 r  secret/oled_data[15]_i_2__3/O
+                         net (fo=15, routed)          0.715    25.729    secret/p_0_out
+    SLICE_X65Y35         FDSE                                         r  secret/oled_data_reg[13]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000    10.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.514    14.855    secret/CLOCK_IBUF_BUFG
+    SLICE_X65Y35         FDSE                                         r  secret/oled_data_reg[13]/C
+                         clock pessimism              0.260    15.115    
+                         clock uncertainty           -0.035    15.080    
+    SLICE_X65Y35         FDSE (Setup_fdse_C_CE)      -0.205    14.875    secret/oled_data_reg[13]
+  -------------------------------------------------------------------
+                         required time                         14.875    
+                         arrival time                         -25.729    
+  -------------------------------------------------------------------
+                         slack                                -10.854    
+
+Slack (VIOLATED) :        -10.832ns  (required time - arrival time)
+  Source:                 x_reg[2]_rep__9/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            secret/oled_data_reg[11]/CE
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        20.614ns  (logic 8.773ns (42.559%)  route 11.841ns (57.441%))
+  Logic Levels:           25  (CARRY4=12 LUT2=5 LUT3=2 LUT4=1 LUT6=5)
+  Clock Path Skew:        0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.853ns = ( 14.853 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.091ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.570     5.091    CLOCK_IBUF_BUFG
+    SLICE_X51Y41         FDRE                                         r  x_reg[2]_rep__9/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y41         FDRE (Prop_fdre_C_Q)         0.456     5.547 r  x_reg[2]_rep__9/Q
+                         net (fo=121, routed)         0.777     6.325    secret/x_reg[2]_rep__9
+    SLICE_X51Y41         LUT2 (Prop_lut2_I1_O)        0.124     6.449 f  secret/oled_data4_i_5/O
+                         net (fo=35, routed)          0.370     6.819    secret_n_92
+    SLICE_X50Y42         LUT6 (Prop_lut6_I2_O)        0.124     6.943 f  oled_data[15]_i_1126/O
+                         net (fo=68, routed)          0.892     7.835    oled_data[15]_i_1126_n_0
+    SLICE_X57Y42         LUT4 (Prop_lut4_I0_O)        0.124     7.959 r  oled_data[15]_i_1332/O
+                         net (fo=3, routed)           0.834     8.794    oled_data[15]_i_1332_n_0
+    SLICE_X56Y43         LUT6 (Prop_lut6_I3_O)        0.124     8.918 r  oled_data[15]_i_1144/O
+                         net (fo=1, routed)           0.000     8.918    oled_data[15]_i_1144_n_0
+    SLICE_X56Y43         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376     9.294 r  oled_data_reg[15]_i_977/CO[3]
+                         net (fo=1, routed)           0.000     9.294    oled_data_reg[15]_i_977_n_0
+    SLICE_X56Y44         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     9.513 r  oled_data_reg[15]_i_1348/O[0]
+                         net (fo=3, routed)           0.570    10.083    oled_data_reg[15]_i_1348_n_7
+    SLICE_X57Y42         LUT3 (Prop_lut3_I2_O)        0.295    10.378 r  oled_data[15]_i_1194/O
+                         net (fo=1, routed)           0.614    10.992    oled_data[15]_i_1194_n_0
+    SLICE_X57Y44         CARRY4 (Prop_carry4_DI[1]_O[3])
+                                                      0.596    11.588 r  oled_data_reg[15]_i_989/O[3]
+                         net (fo=3, routed)           0.795    12.382    oled_data_reg[15]_i_989_n_4
+    SLICE_X60Y43         LUT3 (Prop_lut3_I0_O)        0.306    12.688 r  oled_data[15]_i_998/O
+                         net (fo=1, routed)           0.706    13.394    oled_data[15]_i_998_n_0
+    SLICE_X54Y43         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.550    13.944 r  oled_data_reg[15]_i_812/CO[3]
+                         net (fo=1, routed)           0.000    13.944    oled_data_reg[15]_i_812_n_0
+    SLICE_X54Y44         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    14.267 r  oled_data_reg[15]_i_984/O[1]
+                         net (fo=1, routed)           0.657    14.924    oled_data_reg[15]_i_984_n_6
+    SLICE_X56Y39         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.884    15.808 r  oled_data_reg[15]_i_779/O[2]
+                         net (fo=2, routed)           0.657    16.466    PCIN[22]
+    SLICE_X55Y43         LUT2 (Prop_lut2_I0_O)        0.301    16.767 r  oled_data[15]_i_782/O
+                         net (fo=1, routed)           0.000    16.767    oled_data[15]_i_782_n_0
+    SLICE_X55Y43         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    17.347 r  oled_data_reg[15]_i_499/O[2]
+                         net (fo=2, routed)           0.602    17.949    p_1_in[23]
+    SLICE_X57Y38         LUT2 (Prop_lut2_I0_O)        0.302    18.251 r  oled_data[15]_i_501/O
+                         net (fo=1, routed)           0.000    18.251    oled_data[15]_i_501_n_0
+    SLICE_X57Y38         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.652 r  oled_data_reg[15]_i_277__0/CO[3]
+                         net (fo=1, routed)           0.000    18.652    oled_data_reg[15]_i_277__0_n_0
+    SLICE_X57Y39         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.986 r  oled_data_reg[15]_i_287/O[1]
+                         net (fo=7, routed)           0.796    19.782    C_0[25]
+    SLICE_X60Y36         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.679    20.461 r  oled_data_reg[7]_i_63/CO[3]
+                         net (fo=1, routed)           0.000    20.461    oled_data_reg[7]_i_63_n_0
+    SLICE_X60Y37         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    20.784 f  oled_data_reg[7]_i_62/O[1]
+                         net (fo=2, routed)           0.643    21.428    secret/x_reg[1]_rep__6_6[1]
+    SLICE_X61Y36         LUT2 (Prop_lut2_I1_O)        0.306    21.734 r  secret/oled_data[7]_i_28/O
+                         net (fo=1, routed)           0.000    21.734    secret/oled_data[7]_i_28_n_0
+    SLICE_X61Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    22.284 r  secret/oled_data_reg[7]_i_13/CO[3]
+                         net (fo=1, routed)           0.856    23.140    secret/oled_data416_in
+    SLICE_X63Y36         LUT6 (Prop_lut6_I1_O)        0.124    23.264 f  secret/oled_data[7]_i_8/O
+                         net (fo=8, routed)           0.475    23.739    secret/oled_data[7]_i_8_n_0
+    SLICE_X63Y36         LUT2 (Prop_lut2_I1_O)        0.124    23.863 f  secret/oled_data[15]_i_35__2/O
+                         net (fo=9, routed)           0.610    24.473    secret/oled_data[15]_i_35__2_n_0
+    SLICE_X63Y33         LUT6 (Prop_lut6_I4_O)        0.124    24.597 r  secret/oled_data[15]_i_9__4/O
+                         net (fo=1, routed)           0.292    24.889    secret/oled_data[15]_i_9__4_n_0
+    SLICE_X63Y32         LUT6 (Prop_lut6_I4_O)        0.124    25.013 r  secret/oled_data[15]_i_2__3/O
+                         net (fo=15, routed)          0.692    25.705    secret/p_0_out
+    SLICE_X65Y33         FDSE                                         r  secret/oled_data_reg[11]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000    10.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.512    14.853    secret/CLOCK_IBUF_BUFG
+    SLICE_X65Y33         FDSE                                         r  secret/oled_data_reg[11]/C
+                         clock pessimism              0.260    15.113    
+                         clock uncertainty           -0.035    15.078    
+    SLICE_X65Y33         FDSE (Setup_fdse_C_CE)      -0.205    14.873    secret/oled_data_reg[11]
+  -------------------------------------------------------------------
+                         required time                         14.873    
+                         arrival time                         -25.705    
+  -------------------------------------------------------------------
+                         slack                                -10.832    
+
+Slack (VIOLATED) :        -10.827ns  (required time - arrival time)
+  Source:                 x_reg[2]_rep__9/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            secret/oled_data_reg[10]/CE
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        20.610ns  (logic 8.773ns (42.567%)  route 11.837ns (57.433%))
+  Logic Levels:           25  (CARRY4=12 LUT2=5 LUT3=2 LUT4=1 LUT6=5)
+  Clock Path Skew:        0.023ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.854ns = ( 14.854 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.091ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.570     5.091    CLOCK_IBUF_BUFG
+    SLICE_X51Y41         FDRE                                         r  x_reg[2]_rep__9/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y41         FDRE (Prop_fdre_C_Q)         0.456     5.547 r  x_reg[2]_rep__9/Q
+                         net (fo=121, routed)         0.777     6.325    secret/x_reg[2]_rep__9
+    SLICE_X51Y41         LUT2 (Prop_lut2_I1_O)        0.124     6.449 f  secret/oled_data4_i_5/O
+                         net (fo=35, routed)          0.370     6.819    secret_n_92
+    SLICE_X50Y42         LUT6 (Prop_lut6_I2_O)        0.124     6.943 f  oled_data[15]_i_1126/O
+                         net (fo=68, routed)          0.892     7.835    oled_data[15]_i_1126_n_0
+    SLICE_X57Y42         LUT4 (Prop_lut4_I0_O)        0.124     7.959 r  oled_data[15]_i_1332/O
+                         net (fo=3, routed)           0.834     8.794    oled_data[15]_i_1332_n_0
+    SLICE_X56Y43         LUT6 (Prop_lut6_I3_O)        0.124     8.918 r  oled_data[15]_i_1144/O
+                         net (fo=1, routed)           0.000     8.918    oled_data[15]_i_1144_n_0
+    SLICE_X56Y43         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376     9.294 r  oled_data_reg[15]_i_977/CO[3]
+                         net (fo=1, routed)           0.000     9.294    oled_data_reg[15]_i_977_n_0
+    SLICE_X56Y44         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     9.513 r  oled_data_reg[15]_i_1348/O[0]
+                         net (fo=3, routed)           0.570    10.083    oled_data_reg[15]_i_1348_n_7
+    SLICE_X57Y42         LUT3 (Prop_lut3_I2_O)        0.295    10.378 r  oled_data[15]_i_1194/O
+                         net (fo=1, routed)           0.614    10.992    oled_data[15]_i_1194_n_0
+    SLICE_X57Y44         CARRY4 (Prop_carry4_DI[1]_O[3])
+                                                      0.596    11.588 r  oled_data_reg[15]_i_989/O[3]
+                         net (fo=3, routed)           0.795    12.382    oled_data_reg[15]_i_989_n_4
+    SLICE_X60Y43         LUT3 (Prop_lut3_I0_O)        0.306    12.688 r  oled_data[15]_i_998/O
+                         net (fo=1, routed)           0.706    13.394    oled_data[15]_i_998_n_0
+    SLICE_X54Y43         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.550    13.944 r  oled_data_reg[15]_i_812/CO[3]
+                         net (fo=1, routed)           0.000    13.944    oled_data_reg[15]_i_812_n_0
+    SLICE_X54Y44         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    14.267 r  oled_data_reg[15]_i_984/O[1]
+                         net (fo=1, routed)           0.657    14.924    oled_data_reg[15]_i_984_n_6
+    SLICE_X56Y39         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.884    15.808 r  oled_data_reg[15]_i_779/O[2]
+                         net (fo=2, routed)           0.657    16.466    PCIN[22]
+    SLICE_X55Y43         LUT2 (Prop_lut2_I0_O)        0.301    16.767 r  oled_data[15]_i_782/O
+                         net (fo=1, routed)           0.000    16.767    oled_data[15]_i_782_n_0
+    SLICE_X55Y43         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    17.347 r  oled_data_reg[15]_i_499/O[2]
+                         net (fo=2, routed)           0.602    17.949    p_1_in[23]
+    SLICE_X57Y38         LUT2 (Prop_lut2_I0_O)        0.302    18.251 r  oled_data[15]_i_501/O
+                         net (fo=1, routed)           0.000    18.251    oled_data[15]_i_501_n_0
+    SLICE_X57Y38         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.652 r  oled_data_reg[15]_i_277__0/CO[3]
+                         net (fo=1, routed)           0.000    18.652    oled_data_reg[15]_i_277__0_n_0
+    SLICE_X57Y39         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.986 r  oled_data_reg[15]_i_287/O[1]
+                         net (fo=7, routed)           0.796    19.782    C_0[25]
+    SLICE_X60Y36         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.679    20.461 r  oled_data_reg[7]_i_63/CO[3]
+                         net (fo=1, routed)           0.000    20.461    oled_data_reg[7]_i_63_n_0
+    SLICE_X60Y37         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    20.784 f  oled_data_reg[7]_i_62/O[1]
+                         net (fo=2, routed)           0.643    21.428    secret/x_reg[1]_rep__6_6[1]
+    SLICE_X61Y36         LUT2 (Prop_lut2_I1_O)        0.306    21.734 r  secret/oled_data[7]_i_28/O
+                         net (fo=1, routed)           0.000    21.734    secret/oled_data[7]_i_28_n_0
+    SLICE_X61Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    22.284 r  secret/oled_data_reg[7]_i_13/CO[3]
+                         net (fo=1, routed)           0.856    23.140    secret/oled_data416_in
+    SLICE_X63Y36         LUT6 (Prop_lut6_I1_O)        0.124    23.264 f  secret/oled_data[7]_i_8/O
+                         net (fo=8, routed)           0.475    23.739    secret/oled_data[7]_i_8_n_0
+    SLICE_X63Y36         LUT2 (Prop_lut2_I1_O)        0.124    23.863 f  secret/oled_data[15]_i_35__2/O
+                         net (fo=9, routed)           0.610    24.473    secret/oled_data[15]_i_35__2_n_0
+    SLICE_X63Y33         LUT6 (Prop_lut6_I4_O)        0.124    24.597 r  secret/oled_data[15]_i_9__4/O
+                         net (fo=1, routed)           0.292    24.889    secret/oled_data[15]_i_9__4_n_0
+    SLICE_X63Y32         LUT6 (Prop_lut6_I4_O)        0.124    25.013 r  secret/oled_data[15]_i_2__3/O
+                         net (fo=15, routed)          0.688    25.701    secret/p_0_out
+    SLICE_X65Y34         FDSE                                         r  secret/oled_data_reg[10]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000    10.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.513    14.854    secret/CLOCK_IBUF_BUFG
+    SLICE_X65Y34         FDSE                                         r  secret/oled_data_reg[10]/C
+                         clock pessimism              0.260    15.114    
+                         clock uncertainty           -0.035    15.079    
+    SLICE_X65Y34         FDSE (Setup_fdse_C_CE)      -0.205    14.874    secret/oled_data_reg[10]
+  -------------------------------------------------------------------
+                         required time                         14.874    
+                         arrival time                         -25.701    
+  -------------------------------------------------------------------
+                         slack                                -10.827    
+
+Slack (VIOLATED) :        -10.811ns  (required time - arrival time)
+  Source:                 x_reg[3]_rep__0/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            improvise/oled_data_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        20.662ns  (logic 9.047ns (43.785%)  route 11.615ns (56.215%))
+  Logic Levels:           26  (CARRY4=12 LUT2=3 LUT3=2 LUT4=4 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.763ns = ( 14.763 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.087ns
+    Clock Pessimism Removal (CPR):    0.180ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.566     5.087    CLOCK_IBUF_BUFG
+    SLICE_X36Y49         FDRE                                         r  x_reg[3]_rep__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y49         FDRE (Prop_fdre_C_Q)         0.456     5.543 r  x_reg[3]_rep__0/Q
+                         net (fo=111, routed)         1.208     6.751    improvise/x_reg[3]_rep__0
+    SLICE_X34Y48         LUT6 (Prop_lut6_I0_O)        0.124     6.875 r  improvise/oled_data[3]_i_3333/O
+                         net (fo=1, routed)           0.615     7.490    improvise/oled_data[3]_i_3333_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     8.010 r  improvise/oled_data_reg[3]_i_2448/CO[3]
+                         net (fo=1, routed)           0.000     8.010    improvise/oled_data_reg[3]_i_2448_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     8.229 r  improvise/oled_data_reg[3]_i_2468/O[0]
+                         net (fo=2, routed)           1.035     9.264    improvise/oled_data_reg[3]_i_2468_n_7
+    SLICE_X32Y49         LUT3 (Prop_lut3_I2_O)        0.321     9.585 r  improvise/oled_data[3]_i_1796/O
+                         net (fo=2, routed)           0.448    10.032    improvise/oled_data[3]_i_1796_n_0
+    SLICE_X32Y49         LUT4 (Prop_lut4_I3_O)        0.326    10.358 r  improvise/oled_data[3]_i_1800/O
+                         net (fo=1, routed)           0.000    10.358    improvise/oled_data[3]_i_1800_n_0
+    SLICE_X32Y49         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    10.908 r  improvise/oled_data_reg[3]_i_1323/CO[3]
+                         net (fo=1, routed)           0.001    10.909    improvise/oled_data_reg[3]_i_1323_n_0
+    SLICE_X32Y50         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223    11.132 r  improvise/oled_data_reg[3]_i_1827/O[0]
+                         net (fo=2, routed)           0.831    11.963    improvise/oled_data_reg[3]_i_1827_n_7
+    SLICE_X30Y50         LUT3 (Prop_lut3_I0_O)        0.325    12.288 r  improvise/oled_data[3]_i_1339/O
+                         net (fo=2, routed)           0.490    12.778    improvise/oled_data[3]_i_1339_n_0
+    SLICE_X30Y50         LUT4 (Prop_lut4_I3_O)        0.328    13.106 r  improvise/oled_data[3]_i_1343/O
+                         net (fo=1, routed)           0.000    13.106    improvise/oled_data[3]_i_1343_n_0
+    SLICE_X30Y50         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    13.639 r  improvise/oled_data_reg[3]_i_1041/CO[3]
+                         net (fo=1, routed)           0.000    13.639    improvise/oled_data_reg[3]_i_1041_n_0
+    SLICE_X30Y51         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    13.962 r  improvise/oled_data_reg[3]_i_1334/O[1]
+                         net (fo=1, routed)           0.597    14.559    improvise/oled_data_reg[3]_i_1334_n_6
+    SLICE_X29Y54         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.886    15.445 r  improvise/oled_data_reg[3]_i_1035/O[2]
+                         net (fo=2, routed)           0.614    16.059    improvise/oled_data_reg[3]_i_1035_n_5
+    SLICE_X31Y55         LUT2 (Prop_lut2_I0_O)        0.302    16.361 r  improvise/oled_data[3]_i_1049/O
+                         net (fo=1, routed)           0.000    16.361    improvise/oled_data[3]_i_1049_n_0
+    SLICE_X31Y55         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    16.941 r  improvise/oled_data_reg[3]_i_744/O[2]
+                         net (fo=2, routed)           0.696    17.637    improvise/oled_data_reg[3]_i_744_n_5
+    SLICE_X31Y51         LUT2 (Prop_lut2_I0_O)        0.302    17.939 r  improvise/oled_data[3]_i_745/O
+                         net (fo=1, routed)           0.000    17.939    improvise/oled_data[3]_i_745_n_0
+    SLICE_X31Y51         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.340 r  improvise/oled_data_reg[3]_i_421/CO[3]
+                         net (fo=1, routed)           0.000    18.340    improvise/oled_data_reg[3]_i_421_n_0
+    SLICE_X31Y52         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.674 r  improvise/oled_data_reg[3]_i_426/O[1]
+                         net (fo=4, routed)           0.657    19.331    improvise/oled_data_reg[3]_i_426_n_6
+    SLICE_X28Y50         LUT2 (Prop_lut2_I0_O)        0.303    19.634 r  improvise/oled_data[3]_i_460/O
+                         net (fo=1, routed)           0.000    19.634    improvise/oled_data[3]_i_460_n_0
+    SLICE_X28Y50         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.184 r  improvise/oled_data_reg[3]_i_199/CO[3]
+                         net (fo=1, routed)           0.000    20.184    improvise/oled_data_reg[3]_i_199_n_0
+    SLICE_X28Y51         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    20.406 f  improvise/oled_data_reg[3]_i_73/O[0]
+                         net (fo=1, routed)           0.890    21.296    improvise/oled_data518_out[28]
+    SLICE_X33Y55         LUT4 (Prop_lut4_I2_O)        0.299    21.595 f  improvise/oled_data[3]_i_71/O
+                         net (fo=1, routed)           0.835    22.430    improvise/oled_data[3]_i_71_n_0
+    SLICE_X29Y69         LUT5 (Prop_lut5_I0_O)        0.124    22.554 f  improvise/oled_data[3]_i_19/O
+                         net (fo=1, routed)           0.668    23.222    improvise/oled_data[3]_i_19_n_0
+    SLICE_X32Y75         LUT6 (Prop_lut6_I1_O)        0.124    23.346 f  improvise/oled_data[3]_i_6/O
+                         net (fo=1, routed)           0.847    24.193    improvise/oled_data[3]_i_6_n_0
+    SLICE_X31Y74         LUT6 (Prop_lut6_I1_O)        0.124    24.317 f  improvise/oled_data[3]_i_2/O
+                         net (fo=5, routed)           0.301    24.618    improvise/oled_data[3]_i_2_n_0
+    SLICE_X31Y74         LUT4 (Prop_lut4_I0_O)        0.124    24.742 f  improvise/oled_data[15]_i_7__0/O
+                         net (fo=10, routed)          0.883    25.626    improvise/oled_data[15]_i_7__0_n_0
+    SLICE_X28Y76         LUT6 (Prop_lut6_I1_O)        0.124    25.750 r  improvise/oled_data[7]_i_1/O
+                         net (fo=1, routed)           0.000    25.750    improvise/oled_data[7]_i_1_n_0
+    SLICE_X28Y76         FDRE                                         r  improvise/oled_data_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000    10.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.422    14.763    improvise/CLOCK_IBUF_BUFG
+    SLICE_X28Y76         FDRE                                         r  improvise/oled_data_reg[7]/C
+                         clock pessimism              0.180    14.943    
+                         clock uncertainty           -0.035    14.907    
+    SLICE_X28Y76         FDRE (Setup_fdre_C_D)        0.031    14.938    improvise/oled_data_reg[7]
+  -------------------------------------------------------------------
+                         required time                         14.938    
+                         arrival time                         -25.750    
+  -------------------------------------------------------------------
+                         slack                                -10.811    
+
+Slack (VIOLATED) :        -10.804ns  (required time - arrival time)
+  Source:                 x_reg[3]_rep__0/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            improvise/oled_data_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        20.655ns  (logic 9.047ns (43.800%)  route 11.608ns (56.201%))
+  Logic Levels:           26  (CARRY4=12 LUT2=3 LUT3=2 LUT4=4 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.763ns = ( 14.763 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.087ns
+    Clock Pessimism Removal (CPR):    0.180ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.566     5.087    CLOCK_IBUF_BUFG
+    SLICE_X36Y49         FDRE                                         r  x_reg[3]_rep__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y49         FDRE (Prop_fdre_C_Q)         0.456     5.543 r  x_reg[3]_rep__0/Q
+                         net (fo=111, routed)         1.208     6.751    improvise/x_reg[3]_rep__0
+    SLICE_X34Y48         LUT6 (Prop_lut6_I0_O)        0.124     6.875 r  improvise/oled_data[3]_i_3333/O
+                         net (fo=1, routed)           0.615     7.490    improvise/oled_data[3]_i_3333_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     8.010 r  improvise/oled_data_reg[3]_i_2448/CO[3]
+                         net (fo=1, routed)           0.000     8.010    improvise/oled_data_reg[3]_i_2448_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     8.229 r  improvise/oled_data_reg[3]_i_2468/O[0]
+                         net (fo=2, routed)           1.035     9.264    improvise/oled_data_reg[3]_i_2468_n_7
+    SLICE_X32Y49         LUT3 (Prop_lut3_I2_O)        0.321     9.585 r  improvise/oled_data[3]_i_1796/O
+                         net (fo=2, routed)           0.448    10.032    improvise/oled_data[3]_i_1796_n_0
+    SLICE_X32Y49         LUT4 (Prop_lut4_I3_O)        0.326    10.358 r  improvise/oled_data[3]_i_1800/O
+                         net (fo=1, routed)           0.000    10.358    improvise/oled_data[3]_i_1800_n_0
+    SLICE_X32Y49         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    10.908 r  improvise/oled_data_reg[3]_i_1323/CO[3]
+                         net (fo=1, routed)           0.001    10.909    improvise/oled_data_reg[3]_i_1323_n_0
+    SLICE_X32Y50         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223    11.132 r  improvise/oled_data_reg[3]_i_1827/O[0]
+                         net (fo=2, routed)           0.831    11.963    improvise/oled_data_reg[3]_i_1827_n_7
+    SLICE_X30Y50         LUT3 (Prop_lut3_I0_O)        0.325    12.288 r  improvise/oled_data[3]_i_1339/O
+                         net (fo=2, routed)           0.490    12.778    improvise/oled_data[3]_i_1339_n_0
+    SLICE_X30Y50         LUT4 (Prop_lut4_I3_O)        0.328    13.106 r  improvise/oled_data[3]_i_1343/O
+                         net (fo=1, routed)           0.000    13.106    improvise/oled_data[3]_i_1343_n_0
+    SLICE_X30Y50         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    13.639 r  improvise/oled_data_reg[3]_i_1041/CO[3]
+                         net (fo=1, routed)           0.000    13.639    improvise/oled_data_reg[3]_i_1041_n_0
+    SLICE_X30Y51         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    13.962 r  improvise/oled_data_reg[3]_i_1334/O[1]
+                         net (fo=1, routed)           0.597    14.559    improvise/oled_data_reg[3]_i_1334_n_6
+    SLICE_X29Y54         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.886    15.445 r  improvise/oled_data_reg[3]_i_1035/O[2]
+                         net (fo=2, routed)           0.614    16.059    improvise/oled_data_reg[3]_i_1035_n_5
+    SLICE_X31Y55         LUT2 (Prop_lut2_I0_O)        0.302    16.361 r  improvise/oled_data[3]_i_1049/O
+                         net (fo=1, routed)           0.000    16.361    improvise/oled_data[3]_i_1049_n_0
+    SLICE_X31Y55         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    16.941 r  improvise/oled_data_reg[3]_i_744/O[2]
+                         net (fo=2, routed)           0.696    17.637    improvise/oled_data_reg[3]_i_744_n_5
+    SLICE_X31Y51         LUT2 (Prop_lut2_I0_O)        0.302    17.939 r  improvise/oled_data[3]_i_745/O
+                         net (fo=1, routed)           0.000    17.939    improvise/oled_data[3]_i_745_n_0
+    SLICE_X31Y51         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.340 r  improvise/oled_data_reg[3]_i_421/CO[3]
+                         net (fo=1, routed)           0.000    18.340    improvise/oled_data_reg[3]_i_421_n_0
+    SLICE_X31Y52         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.674 r  improvise/oled_data_reg[3]_i_426/O[1]
+                         net (fo=4, routed)           0.657    19.331    improvise/oled_data_reg[3]_i_426_n_6
+    SLICE_X28Y50         LUT2 (Prop_lut2_I0_O)        0.303    19.634 r  improvise/oled_data[3]_i_460/O
+                         net (fo=1, routed)           0.000    19.634    improvise/oled_data[3]_i_460_n_0
+    SLICE_X28Y50         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.184 r  improvise/oled_data_reg[3]_i_199/CO[3]
+                         net (fo=1, routed)           0.000    20.184    improvise/oled_data_reg[3]_i_199_n_0
+    SLICE_X28Y51         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    20.406 f  improvise/oled_data_reg[3]_i_73/O[0]
+                         net (fo=1, routed)           0.890    21.296    improvise/oled_data518_out[28]
+    SLICE_X33Y55         LUT4 (Prop_lut4_I2_O)        0.299    21.595 f  improvise/oled_data[3]_i_71/O
+                         net (fo=1, routed)           0.835    22.430    improvise/oled_data[3]_i_71_n_0
+    SLICE_X29Y69         LUT5 (Prop_lut5_I0_O)        0.124    22.554 f  improvise/oled_data[3]_i_19/O
+                         net (fo=1, routed)           0.668    23.222    improvise/oled_data[3]_i_19_n_0
+    SLICE_X32Y75         LUT6 (Prop_lut6_I1_O)        0.124    23.346 f  improvise/oled_data[3]_i_6/O
+                         net (fo=1, routed)           0.847    24.193    improvise/oled_data[3]_i_6_n_0
+    SLICE_X31Y74         LUT6 (Prop_lut6_I1_O)        0.124    24.317 f  improvise/oled_data[3]_i_2/O
+                         net (fo=5, routed)           0.301    24.618    improvise/oled_data[3]_i_2_n_0
+    SLICE_X31Y74         LUT4 (Prop_lut4_I0_O)        0.124    24.742 f  improvise/oled_data[15]_i_7__0/O
+                         net (fo=10, routed)          0.876    25.619    improvise/oled_data[15]_i_7__0_n_0
+    SLICE_X28Y76         LUT6 (Prop_lut6_I1_O)        0.124    25.743 r  improvise/oled_data[9]_i_1/O
+                         net (fo=1, routed)           0.000    25.743    improvise/oled_data[9]_i_1_n_0
+    SLICE_X28Y76         FDRE                                         r  improvise/oled_data_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000    10.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.422    14.763    improvise/CLOCK_IBUF_BUFG
+    SLICE_X28Y76         FDRE                                         r  improvise/oled_data_reg[9]/C
+                         clock pessimism              0.180    14.943    
+                         clock uncertainty           -0.035    14.907    
+    SLICE_X28Y76         FDRE (Setup_fdre_C_D)        0.032    14.939    improvise/oled_data_reg[9]
+  -------------------------------------------------------------------
+                         required time                         14.939    
+                         arrival time                         -25.743    
+  -------------------------------------------------------------------
+                         slack                                -10.804    
+
+Slack (VIOLATED) :        -10.759ns  (required time - arrival time)
+  Source:                 x_reg[2]_rep__9/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            secret/oled_data_reg[9]/CE
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        20.541ns  (logic 8.773ns (42.710%)  route 11.768ns (57.290%))
+  Logic Levels:           25  (CARRY4=12 LUT2=5 LUT3=2 LUT4=1 LUT6=5)
+  Clock Path Skew:        0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.853ns = ( 14.853 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.091ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.570     5.091    CLOCK_IBUF_BUFG
+    SLICE_X51Y41         FDRE                                         r  x_reg[2]_rep__9/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y41         FDRE (Prop_fdre_C_Q)         0.456     5.547 r  x_reg[2]_rep__9/Q
+                         net (fo=121, routed)         0.777     6.325    secret/x_reg[2]_rep__9
+    SLICE_X51Y41         LUT2 (Prop_lut2_I1_O)        0.124     6.449 f  secret/oled_data4_i_5/O
+                         net (fo=35, routed)          0.370     6.819    secret_n_92
+    SLICE_X50Y42         LUT6 (Prop_lut6_I2_O)        0.124     6.943 f  oled_data[15]_i_1126/O
+                         net (fo=68, routed)          0.892     7.835    oled_data[15]_i_1126_n_0
+    SLICE_X57Y42         LUT4 (Prop_lut4_I0_O)        0.124     7.959 r  oled_data[15]_i_1332/O
+                         net (fo=3, routed)           0.834     8.794    oled_data[15]_i_1332_n_0
+    SLICE_X56Y43         LUT6 (Prop_lut6_I3_O)        0.124     8.918 r  oled_data[15]_i_1144/O
+                         net (fo=1, routed)           0.000     8.918    oled_data[15]_i_1144_n_0
+    SLICE_X56Y43         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376     9.294 r  oled_data_reg[15]_i_977/CO[3]
+                         net (fo=1, routed)           0.000     9.294    oled_data_reg[15]_i_977_n_0
+    SLICE_X56Y44         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     9.513 r  oled_data_reg[15]_i_1348/O[0]
+                         net (fo=3, routed)           0.570    10.083    oled_data_reg[15]_i_1348_n_7
+    SLICE_X57Y42         LUT3 (Prop_lut3_I2_O)        0.295    10.378 r  oled_data[15]_i_1194/O
+                         net (fo=1, routed)           0.614    10.992    oled_data[15]_i_1194_n_0
+    SLICE_X57Y44         CARRY4 (Prop_carry4_DI[1]_O[3])
+                                                      0.596    11.588 r  oled_data_reg[15]_i_989/O[3]
+                         net (fo=3, routed)           0.795    12.382    oled_data_reg[15]_i_989_n_4
+    SLICE_X60Y43         LUT3 (Prop_lut3_I0_O)        0.306    12.688 r  oled_data[15]_i_998/O
+                         net (fo=1, routed)           0.706    13.394    oled_data[15]_i_998_n_0
+    SLICE_X54Y43         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.550    13.944 r  oled_data_reg[15]_i_812/CO[3]
+                         net (fo=1, routed)           0.000    13.944    oled_data_reg[15]_i_812_n_0
+    SLICE_X54Y44         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    14.267 r  oled_data_reg[15]_i_984/O[1]
+                         net (fo=1, routed)           0.657    14.924    oled_data_reg[15]_i_984_n_6
+    SLICE_X56Y39         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.884    15.808 r  oled_data_reg[15]_i_779/O[2]
+                         net (fo=2, routed)           0.657    16.466    PCIN[22]
+    SLICE_X55Y43         LUT2 (Prop_lut2_I0_O)        0.301    16.767 r  oled_data[15]_i_782/O
+                         net (fo=1, routed)           0.000    16.767    oled_data[15]_i_782_n_0
+    SLICE_X55Y43         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    17.347 r  oled_data_reg[15]_i_499/O[2]
+                         net (fo=2, routed)           0.602    17.949    p_1_in[23]
+    SLICE_X57Y38         LUT2 (Prop_lut2_I0_O)        0.302    18.251 r  oled_data[15]_i_501/O
+                         net (fo=1, routed)           0.000    18.251    oled_data[15]_i_501_n_0
+    SLICE_X57Y38         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.652 r  oled_data_reg[15]_i_277__0/CO[3]
+                         net (fo=1, routed)           0.000    18.652    oled_data_reg[15]_i_277__0_n_0
+    SLICE_X57Y39         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.986 r  oled_data_reg[15]_i_287/O[1]
+                         net (fo=7, routed)           0.796    19.782    C_0[25]
+    SLICE_X60Y36         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.679    20.461 r  oled_data_reg[7]_i_63/CO[3]
+                         net (fo=1, routed)           0.000    20.461    oled_data_reg[7]_i_63_n_0
+    SLICE_X60Y37         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    20.784 f  oled_data_reg[7]_i_62/O[1]
+                         net (fo=2, routed)           0.643    21.428    secret/x_reg[1]_rep__6_6[1]
+    SLICE_X61Y36         LUT2 (Prop_lut2_I1_O)        0.306    21.734 r  secret/oled_data[7]_i_28/O
+                         net (fo=1, routed)           0.000    21.734    secret/oled_data[7]_i_28_n_0
+    SLICE_X61Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    22.284 r  secret/oled_data_reg[7]_i_13/CO[3]
+                         net (fo=1, routed)           0.856    23.140    secret/oled_data416_in
+    SLICE_X63Y36         LUT6 (Prop_lut6_I1_O)        0.124    23.264 f  secret/oled_data[7]_i_8/O
+                         net (fo=8, routed)           0.475    23.739    secret/oled_data[7]_i_8_n_0
+    SLICE_X63Y36         LUT2 (Prop_lut2_I1_O)        0.124    23.863 f  secret/oled_data[15]_i_35__2/O
+                         net (fo=9, routed)           0.610    24.473    secret/oled_data[15]_i_35__2_n_0
+    SLICE_X63Y33         LUT6 (Prop_lut6_I4_O)        0.124    24.597 r  secret/oled_data[15]_i_9__4/O
+                         net (fo=1, routed)           0.292    24.889    secret/oled_data[15]_i_9__4_n_0
+    SLICE_X63Y32         LUT6 (Prop_lut6_I4_O)        0.124    25.013 r  secret/oled_data[15]_i_2__3/O
+                         net (fo=15, routed)          0.619    25.632    secret/p_0_out
+    SLICE_X63Y33         FDSE                                         r  secret/oled_data_reg[9]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000    10.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.512    14.853    secret/CLOCK_IBUF_BUFG
+    SLICE_X63Y33         FDSE                                         r  secret/oled_data_reg[9]/C
+                         clock pessimism              0.260    15.113    
+                         clock uncertainty           -0.035    15.078    
+    SLICE_X63Y33         FDSE (Setup_fdse_C_CE)      -0.205    14.873    secret/oled_data_reg[9]
+  -------------------------------------------------------------------
+                         required time                         14.873    
+                         arrival time                         -25.632    
+  -------------------------------------------------------------------
+                         slack                                -10.759    
+
+Slack (VIOLATED) :        -10.688ns  (required time - arrival time)
+  Source:                 x_reg[2]_rep__9/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            secret/oled_data_reg[6]/CE
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        20.469ns  (logic 8.773ns (42.860%)  route 11.696ns (57.140%))
+  Logic Levels:           25  (CARRY4=12 LUT2=5 LUT3=2 LUT4=1 LUT6=5)
+  Clock Path Skew:        0.021ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.852ns = ( 14.852 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.091ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.570     5.091    CLOCK_IBUF_BUFG
+    SLICE_X51Y41         FDRE                                         r  x_reg[2]_rep__9/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y41         FDRE (Prop_fdre_C_Q)         0.456     5.547 r  x_reg[2]_rep__9/Q
+                         net (fo=121, routed)         0.777     6.325    secret/x_reg[2]_rep__9
+    SLICE_X51Y41         LUT2 (Prop_lut2_I1_O)        0.124     6.449 f  secret/oled_data4_i_5/O
+                         net (fo=35, routed)          0.370     6.819    secret_n_92
+    SLICE_X50Y42         LUT6 (Prop_lut6_I2_O)        0.124     6.943 f  oled_data[15]_i_1126/O
+                         net (fo=68, routed)          0.892     7.835    oled_data[15]_i_1126_n_0
+    SLICE_X57Y42         LUT4 (Prop_lut4_I0_O)        0.124     7.959 r  oled_data[15]_i_1332/O
+                         net (fo=3, routed)           0.834     8.794    oled_data[15]_i_1332_n_0
+    SLICE_X56Y43         LUT6 (Prop_lut6_I3_O)        0.124     8.918 r  oled_data[15]_i_1144/O
+                         net (fo=1, routed)           0.000     8.918    oled_data[15]_i_1144_n_0
+    SLICE_X56Y43         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376     9.294 r  oled_data_reg[15]_i_977/CO[3]
+                         net (fo=1, routed)           0.000     9.294    oled_data_reg[15]_i_977_n_0
+    SLICE_X56Y44         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     9.513 r  oled_data_reg[15]_i_1348/O[0]
+                         net (fo=3, routed)           0.570    10.083    oled_data_reg[15]_i_1348_n_7
+    SLICE_X57Y42         LUT3 (Prop_lut3_I2_O)        0.295    10.378 r  oled_data[15]_i_1194/O
+                         net (fo=1, routed)           0.614    10.992    oled_data[15]_i_1194_n_0
+    SLICE_X57Y44         CARRY4 (Prop_carry4_DI[1]_O[3])
+                                                      0.596    11.588 r  oled_data_reg[15]_i_989/O[3]
+                         net (fo=3, routed)           0.795    12.382    oled_data_reg[15]_i_989_n_4
+    SLICE_X60Y43         LUT3 (Prop_lut3_I0_O)        0.306    12.688 r  oled_data[15]_i_998/O
+                         net (fo=1, routed)           0.706    13.394    oled_data[15]_i_998_n_0
+    SLICE_X54Y43         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.550    13.944 r  oled_data_reg[15]_i_812/CO[3]
+                         net (fo=1, routed)           0.000    13.944    oled_data_reg[15]_i_812_n_0
+    SLICE_X54Y44         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    14.267 r  oled_data_reg[15]_i_984/O[1]
+                         net (fo=1, routed)           0.657    14.924    oled_data_reg[15]_i_984_n_6
+    SLICE_X56Y39         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.884    15.808 r  oled_data_reg[15]_i_779/O[2]
+                         net (fo=2, routed)           0.657    16.466    PCIN[22]
+    SLICE_X55Y43         LUT2 (Prop_lut2_I0_O)        0.301    16.767 r  oled_data[15]_i_782/O
+                         net (fo=1, routed)           0.000    16.767    oled_data[15]_i_782_n_0
+    SLICE_X55Y43         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    17.347 r  oled_data_reg[15]_i_499/O[2]
+                         net (fo=2, routed)           0.602    17.949    p_1_in[23]
+    SLICE_X57Y38         LUT2 (Prop_lut2_I0_O)        0.302    18.251 r  oled_data[15]_i_501/O
+                         net (fo=1, routed)           0.000    18.251    oled_data[15]_i_501_n_0
+    SLICE_X57Y38         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.652 r  oled_data_reg[15]_i_277__0/CO[3]
+                         net (fo=1, routed)           0.000    18.652    oled_data_reg[15]_i_277__0_n_0
+    SLICE_X57Y39         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.986 r  oled_data_reg[15]_i_287/O[1]
+                         net (fo=7, routed)           0.796    19.782    C_0[25]
+    SLICE_X60Y36         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.679    20.461 r  oled_data_reg[7]_i_63/CO[3]
+                         net (fo=1, routed)           0.000    20.461    oled_data_reg[7]_i_63_n_0
+    SLICE_X60Y37         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    20.784 f  oled_data_reg[7]_i_62/O[1]
+                         net (fo=2, routed)           0.643    21.428    secret/x_reg[1]_rep__6_6[1]
+    SLICE_X61Y36         LUT2 (Prop_lut2_I1_O)        0.306    21.734 r  secret/oled_data[7]_i_28/O
+                         net (fo=1, routed)           0.000    21.734    secret/oled_data[7]_i_28_n_0
+    SLICE_X61Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    22.284 r  secret/oled_data_reg[7]_i_13/CO[3]
+                         net (fo=1, routed)           0.856    23.140    secret/oled_data416_in
+    SLICE_X63Y36         LUT6 (Prop_lut6_I1_O)        0.124    23.264 f  secret/oled_data[7]_i_8/O
+                         net (fo=8, routed)           0.475    23.739    secret/oled_data[7]_i_8_n_0
+    SLICE_X63Y36         LUT2 (Prop_lut2_I1_O)        0.124    23.863 f  secret/oled_data[15]_i_35__2/O
+                         net (fo=9, routed)           0.610    24.473    secret/oled_data[15]_i_35__2_n_0
+    SLICE_X63Y33         LUT6 (Prop_lut6_I4_O)        0.124    24.597 r  secret/oled_data[15]_i_9__4/O
+                         net (fo=1, routed)           0.292    24.889    secret/oled_data[15]_i_9__4_n_0
+    SLICE_X63Y32         LUT6 (Prop_lut6_I4_O)        0.124    25.013 r  secret/oled_data[15]_i_2__3/O
+                         net (fo=15, routed)          0.547    25.560    secret/p_0_out
+    SLICE_X65Y32         FDSE                                         r  secret/oled_data_reg[6]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000    10.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        1.511    14.852    secret/CLOCK_IBUF_BUFG
+    SLICE_X65Y32         FDSE                                         r  secret/oled_data_reg[6]/C
+                         clock pessimism              0.260    15.112    
+                         clock uncertainty           -0.035    15.077    
+    SLICE_X65Y32         FDSE (Setup_fdse_C_CE)      -0.205    14.872    secret/oled_data_reg[6]
+  -------------------------------------------------------------------
+                         required time                         14.872    
+                         arrival time                         -25.560    
+  -------------------------------------------------------------------
+                         slack                                -10.688    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.140ns  (arrival time - required time)
+  Source:                 scroll/seg3_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            scroll/display1/seg_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.273ns  (logic 0.186ns (68.106%)  route 0.087ns (31.894%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.986ns
+    Source Clock Delay      (SCD):    1.473ns
+    Clock Pessimism Removal (CPR):    0.500ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.590     1.473    scroll/CLOCK_IBUF_BUFG
+    SLICE_X61Y13         FDRE                                         r  scroll/seg3_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y13         FDRE (Prop_fdre_C_Q)         0.141     1.614 r  scroll/seg3_reg[3]/Q
+                         net (fo=1, routed)           0.087     1.701    scroll/display1/Q[3]
+    SLICE_X60Y13         LUT6 (Prop_lut6_I0_O)        0.045     1.746 r  scroll/display1/seg[3]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.746    scroll/display1/seg[3]_i_1__0_n_0
+    SLICE_X60Y13         FDRE                                         r  scroll/display1/seg_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.859     1.986    scroll/display1/CLOCK_IBUF_BUFG
+    SLICE_X60Y13         FDRE                                         r  scroll/display1/seg_reg[3]/C
+                         clock pessimism             -0.500     1.486    
+    SLICE_X60Y13         FDRE (Hold_fdre_C_D)         0.120     1.606    scroll/display1/seg_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.606    
+                         arrival time                           1.746    
+  -------------------------------------------------------------------
+                         slack                                  0.140    
+
+Slack (MET) :             0.152ns  (arrival time - required time)
+  Source:                 scroll/seg0_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            scroll/display1/seg_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.186ns (64.640%)  route 0.102ns (35.360%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.986ns
+    Source Clock Delay      (SCD):    1.473ns
+    Clock Pessimism Removal (CPR):    0.498ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.590     1.473    scroll/CLOCK_IBUF_BUFG
+    SLICE_X58Y13         FDRE                                         r  scroll/seg0_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y13         FDRE (Prop_fdre_C_Q)         0.141     1.614 r  scroll/seg0_reg[6]/Q
+                         net (fo=1, routed)           0.102     1.716    scroll/display1/seg0_reg[6][6]
+    SLICE_X60Y13         LUT6 (Prop_lut6_I5_O)        0.045     1.761 r  scroll/display1/seg[6]_i_2/O
+                         net (fo=1, routed)           0.000     1.761    scroll/display1/seg[6]_i_2_n_0
+    SLICE_X60Y13         FDRE                                         r  scroll/display1/seg_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.859     1.986    scroll/display1/CLOCK_IBUF_BUFG
+    SLICE_X60Y13         FDRE                                         r  scroll/display1/seg_reg[6]/C
+                         clock pessimism             -0.498     1.488    
+    SLICE_X60Y13         FDRE (Hold_fdre_C_D)         0.121     1.609    scroll/display1/seg_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -1.609    
+                         arrival time                           1.761    
+  -------------------------------------------------------------------
+                         slack                                  0.152    
+
+Slack (MET) :             0.154ns  (arrival time - required time)
+  Source:                 unit2/seg_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.186ns (64.537%)  route 0.102ns (35.463%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.949ns
+    Source Clock Delay      (SCD):    1.439ns
+    Clock Pessimism Removal (CPR):    0.497ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.556     1.439    unit2/CLOCK_IBUF_BUFG
+    SLICE_X57Y23         FDRE                                         r  unit2/seg_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y23         FDRE (Prop_fdre_C_Q)         0.141     1.580 r  unit2/seg_reg[0]/Q
+                         net (fo=2, routed)           0.102     1.682    keyboard/seg_reg[7]_0[0]
+    SLICE_X56Y23         LUT6 (Prop_lut6_I4_O)        0.045     1.727 r  keyboard/seg[0]_i_1__1/O
+                         net (fo=1, routed)           0.000     1.727    keyboard_n_32
+    SLICE_X56Y23         FDRE                                         r  seg_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.822     1.949    CLOCK_IBUF_BUFG
+    SLICE_X56Y23         FDRE                                         r  seg_reg[0]/C
+                         clock pessimism             -0.497     1.452    
+    SLICE_X56Y23         FDRE (Hold_fdre_C_D)         0.121     1.573    seg_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.573    
+                         arrival time                           1.727    
+  -------------------------------------------------------------------
+                         slack                                  0.154    
+
+Slack (MET) :             0.165ns  (arrival time - required time)
+  Source:                 unit2/display/seg_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            unit2/seg_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.251ns  (logic 0.141ns (56.174%)  route 0.110ns (43.826%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.949ns
+    Source Clock Delay      (SCD):    1.438ns
+    Clock Pessimism Removal (CPR):    0.497ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.555     1.438    unit2/display/CLOCK_IBUF_BUFG
+    SLICE_X57Y24         FDRE                                         r  unit2/display/seg_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y24         FDRE (Prop_fdre_C_Q)         0.141     1.579 r  unit2/display/seg_reg[4]/Q
+                         net (fo=1, routed)           0.110     1.689    unit2/display_n_3
+    SLICE_X57Y23         FDRE                                         r  unit2/seg_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.822     1.949    unit2/CLOCK_IBUF_BUFG
+    SLICE_X57Y23         FDRE                                         r  unit2/seg_reg[4]/C
+                         clock pessimism             -0.497     1.452    
+    SLICE_X57Y23         FDRE (Hold_fdre_C_D)         0.072     1.524    unit2/seg_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.524    
+                         arrival time                           1.689    
+  -------------------------------------------------------------------
+                         slack                                  0.165    
+
+Slack (MET) :             0.168ns  (arrival time - required time)
+  Source:                 scroll/seg0_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            scroll/display1/seg_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.273ns  (logic 0.186ns (68.212%)  route 0.087ns (31.788%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.986ns
+    Source Clock Delay      (SCD):    1.473ns
+    Clock Pessimism Removal (CPR):    0.500ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.590     1.473    scroll/CLOCK_IBUF_BUFG
+    SLICE_X58Y14         FDRE                                         r  scroll/seg0_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y14         FDRE (Prop_fdre_C_Q)         0.141     1.614 r  scroll/seg0_reg[2]/Q
+                         net (fo=1, routed)           0.087     1.701    scroll/display1/seg0_reg[6][2]
+    SLICE_X59Y14         LUT6 (Prop_lut6_I5_O)        0.045     1.746 r  scroll/display1/seg[2]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.746    scroll/display1/seg[2]_i_1__0_n_0
+    SLICE_X59Y14         FDRE                                         r  scroll/display1/seg_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.859     1.986    scroll/display1/CLOCK_IBUF_BUFG
+    SLICE_X59Y14         FDRE                                         r  scroll/display1/seg_reg[2]/C
+                         clock pessimism             -0.500     1.486    
+    SLICE_X59Y14         FDRE (Hold_fdre_C_D)         0.092     1.578    scroll/display1/seg_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.578    
+                         arrival time                           1.746    
+  -------------------------------------------------------------------
+                         slack                                  0.168    
+
+Slack (MET) :             0.175ns  (arrival time - required time)
+  Source:                 scroll/display1/an_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            scroll/an_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.257ns  (logic 0.141ns (54.812%)  route 0.116ns (45.188%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.012ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.953ns
+    Source Clock Delay      (SCD):    1.442ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.559     1.442    scroll/display1/CLOCK_IBUF_BUFG
+    SLICE_X53Y18         FDRE                                         r  scroll/display1/an_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X53Y18         FDRE (Prop_fdre_C_Q)         0.141     1.583 r  scroll/display1/an_reg[1]/Q
+                         net (fo=1, routed)           0.116     1.699    scroll/display1_n_9
+    SLICE_X53Y20         FDRE                                         r  scroll/an_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.826     1.953    scroll/CLOCK_IBUF_BUFG
+    SLICE_X53Y20         FDRE                                         r  scroll/an_reg[1]/C
+                         clock pessimism             -0.499     1.454    
+    SLICE_X53Y20         FDRE (Hold_fdre_C_D)         0.070     1.524    scroll/an_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.524    
+                         arrival time                           1.699    
+  -------------------------------------------------------------------
+                         slack                                  0.175    
+
+Slack (MET) :             0.177ns  (arrival time - required time)
+  Source:                 unit2/display/seg_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            unit2/seg_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.280ns  (logic 0.164ns (58.670%)  route 0.116ns (41.330%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.032ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.948ns
+    Source Clock Delay      (SCD):    1.438ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.555     1.438    unit2/display/CLOCK_IBUF_BUFG
+    SLICE_X56Y24         FDRE                                         r  unit2/display/seg_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X56Y24         FDRE (Prop_fdre_C_Q)         0.164     1.602 r  unit2/display/seg_reg[7]/Q
+                         net (fo=1, routed)           0.116     1.718    unit2/display_n_0
+    SLICE_X55Y24         FDRE                                         r  unit2/seg_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.821     1.948    unit2/CLOCK_IBUF_BUFG
+    SLICE_X55Y24         FDRE                                         r  unit2/seg_reg[7]/C
+                         clock pessimism             -0.478     1.470    
+    SLICE_X55Y24         FDRE (Hold_fdre_C_D)         0.071     1.541    unit2/seg_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -1.541    
+                         arrival time                           1.718    
+  -------------------------------------------------------------------
+                         slack                                  0.177    
+
+Slack (MET) :             0.177ns  (arrival time - required time)
+  Source:                 scroll/seg0_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            scroll/display1/seg_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.302ns  (logic 0.186ns (61.536%)  route 0.116ns (38.464%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.986ns
+    Source Clock Delay      (SCD):    1.474ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.591     1.474    scroll/CLOCK_IBUF_BUFG
+    SLICE_X62Y14         FDRE                                         r  scroll/seg0_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y14         FDRE (Prop_fdre_C_Q)         0.141     1.615 r  scroll/seg0_reg[1]/Q
+                         net (fo=1, routed)           0.116     1.731    scroll/display1/seg0_reg[6][1]
+    SLICE_X59Y14         LUT6 (Prop_lut6_I5_O)        0.045     1.776 r  scroll/display1/seg[1]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.776    scroll/display1/seg[1]_i_1__0_n_0
+    SLICE_X59Y14         FDRE                                         r  scroll/display1/seg_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.859     1.986    scroll/display1/CLOCK_IBUF_BUFG
+    SLICE_X59Y14         FDRE                                         r  scroll/display1/seg_reg[1]/C
+                         clock pessimism             -0.478     1.508    
+    SLICE_X59Y14         FDRE (Hold_fdre_C_D)         0.091     1.599    scroll/display1/seg_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.599    
+                         arrival time                           1.776    
+  -------------------------------------------------------------------
+                         slack                                  0.177    
+
+Slack (MET) :             0.185ns  (arrival time - required time)
+  Source:                 unit2/seg_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.291ns  (logic 0.186ns (63.880%)  route 0.105ns (36.120%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.951ns
+    Source Clock Delay      (SCD):    1.439ns
+    Clock Pessimism Removal (CPR):    0.497ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.556     1.439    unit2/CLOCK_IBUF_BUFG
+    SLICE_X57Y23         FDRE                                         r  unit2/seg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y23         FDRE (Prop_fdre_C_Q)         0.141     1.580 r  unit2/seg_reg[2]/Q
+                         net (fo=1, routed)           0.105     1.685    keyboard/seg_reg[7]_0[2]
+    SLICE_X57Y22         LUT6 (Prop_lut6_I1_O)        0.045     1.730 r  keyboard/seg[2]_i_1__1/O
+                         net (fo=1, routed)           0.000     1.730    keyboard_n_30
+    SLICE_X57Y22         FDRE                                         r  seg_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.824     1.951    CLOCK_IBUF_BUFG
+    SLICE_X57Y22         FDRE                                         r  seg_reg[2]/C
+                         clock pessimism             -0.497     1.454    
+    SLICE_X57Y22         FDRE (Hold_fdre_C_D)         0.091     1.545    seg_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.545    
+                         arrival time                           1.730    
+  -------------------------------------------------------------------
+                         slack                                  0.185    
+
+Slack (MET) :             0.189ns  (arrival time - required time)
+  Source:                 scroll/seg1_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            scroll/display1/seg_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.323ns  (logic 0.209ns (64.623%)  route 0.114ns (35.377%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.986ns
+    Source Clock Delay      (SCD):    1.475ns
+    Clock Pessimism Removal (CPR):    0.498ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.592     1.475    scroll/CLOCK_IBUF_BUFG
+    SLICE_X60Y11         FDRE                                         r  scroll/seg1_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X60Y11         FDRE (Prop_fdre_C_Q)         0.164     1.639 r  scroll/seg1_reg[5]/Q
+                         net (fo=1, routed)           0.114     1.754    scroll/display1/seg1_reg[6][5]
+    SLICE_X60Y13         LUT6 (Prop_lut6_I3_O)        0.045     1.799 r  scroll/display1/seg[5]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.799    scroll/display1/seg[5]_i_1__0_n_0
+    SLICE_X60Y13         FDRE                                         r  scroll/display1/seg_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLOCK (IN)
+                         net (fo=0)                   0.000     0.000    CLOCK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLOCK_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    CLOCK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  CLOCK_IBUF_BUFG_inst/O
+                         net (fo=1051, routed)        0.859     1.986    scroll/display1/CLOCK_IBUF_BUFG
+    SLICE_X60Y13         FDRE                                         r  scroll/display1/seg_reg[5]/C
+                         clock pessimism             -0.498     1.488    
+    SLICE_X60Y13         FDRE (Hold_fdre_C_D)         0.121     1.609    scroll/display1/seg_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -1.609    
+                         arrival time                           1.799    
+  -------------------------------------------------------------------
+                         slack                                  0.189    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { CLOCK }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y0  CLOCK_IBUF_BUFG_inst/I
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X55Y26   an_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X55Y26   an_reg[1]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X61Y24   an_reg[2]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X61Y25   an_reg[3]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X2Y108   clk20hz/clk20k_reg/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X2Y108   clk20hz/count_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X1Y109   clk20hz/count_reg[10]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X1Y109   clk20hz/count_reg[11]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X1Y107   clk20hz/count_reg[1]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X2Y85    improvise/unit2/count_reg[16]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X2Y85    improvise/unit2/count_reg[17]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X2Y85    improvise/unit2/count_reg[18]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X2Y85    improvise/unit2/count_reg[19]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X2Y86    improvise/unit2/count_reg[20]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X2Y86    improvise/unit2/count_reg[21]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X2Y86    improvise/unit2/count_reg[22]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X2Y86    improvise/unit2/count_reg[23]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X2Y87    improvise/unit2/count_reg[24]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X2Y87    improvise/unit2/count_reg[25]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X61Y24   an_reg[2]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X61Y24   an_reg[2]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X61Y25   an_reg[3]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X61Y25   an_reg[3]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X2Y108   clk20hz/clk20k_reg/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X2Y108   clk20hz/count_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X1Y107   clk20hz/count_reg[1]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X1Y107   clk20hz/count_reg[2]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X1Y107   clk20hz/count_reg[3]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X1Y107   clk20hz/count_reg[4]/C
+
+
+

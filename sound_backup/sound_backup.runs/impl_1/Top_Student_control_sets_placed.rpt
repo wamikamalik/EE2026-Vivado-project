@@ -1,0 +1,132 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  4 12:33:40 2020
+| Host         : DESKTOP-NCK7F8R running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    62 |
+| Unused register locations in slices containing registers |   154 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            5 |
+|      4 |            2 |
+|      8 |            7 |
+|     10 |            5 |
+|     12 |            2 |
+|     14 |            2 |
+|    16+ |           39 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1154 |          326 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             658 |           96 |
+| Yes          | No                    | No                     |             392 |           84 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             530 |           81 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+------------------------------------------+-------------------------------------+------------------+----------------+
+|      Clock Signal      |               Enable Signal              |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++------------------------+------------------------------------------+-------------------------------------+------------------+----------------+
+| ~clk6p25m_BUFG         |                                          |                                     |                1 |              2 |
+|  keyboard/CLK50MHZ     | keyboard/uut/db_clk/O_i_1_n_0            |                                     |                1 |              2 |
+|  keyboard/CLK50MHZ     | keyboard/uut/db_data/Iv_i_1__0_n_0       |                                     |                1 |              2 |
+|  keyboard/CLK50MHZ     | keyboard/uut/db_data/O_i_1__0_n_0        |                                     |                1 |              2 |
+|  keyboard/CLK50MHZ     | keyboard/uut/db_clk/clear                |                                     |                1 |              2 |
+|  secret/unit2/clk      |                                          |                                     |                1 |              4 |
+|  sp/slow/clk           |                                          |                                     |                2 |              4 |
+|  CLOCK_IBUF_BUFG       | invert1/p_1_in[15]                       | invert1/oled_data[15]_i_1__7_n_0    |                3 |              8 |
+|  message1/unit2/clk    |                                          |                                     |                3 |              8 |
+| ~count_reg[31]_i_3_n_0 | keyboard/uut/cnt                         | keyboard/uut/cnt[3]_i_1_n_0         |                1 |              8 |
+|  CLOCK_IBUF_BUFG       |                                          | keyboard/blinkyan[3]_i_1_n_0        |                1 |              8 |
+|  CLOCK_IBUF_BUFG       | unit1/led_reg[12]_0                      | switch1_IBUF                        |                3 |              8 |
+|  CLOCK_IBUF_BUFG       | keyboard/position                        |                                     |                2 |              8 |
+|  he/unit2/CLK          |                                          | keyboard/SR[0]                      |                2 |              8 |
+|  man/unit4/clk2        |                                          |                                     |                1 |             10 |
+|  man/unit3/clk1        |                                          |                                     |                1 |             10 |
+|  CLOCK_IBUF_BUFG       | unit1/E[0]                               |                                     |                3 |             10 |
+|  CLOCK_IBUF_BUFG       | invert1/mode1                            | invert1/mode1[4]_i_1_n_0            |                2 |             10 |
+|  keyboard/CLK50MHZ     | keyboard/uut/db_data/count[4]_i_1__3_n_0 | keyboard/uut/db_data/Iv_i_1__0_n_0  |                2 |             10 |
+|  man/unit2/clk         |                                          | man/upper[5]_i_1_n_0                |                2 |             12 |
+|  message/unit2/CLK     |                                          |                                     |                2 |             12 |
+|  keyboard/CLK50MHZ     |                                          |                                     |                4 |             14 |
+|  CLOCK_IBUF_BUFG       | he/oled_data[15]_i_2__2_n_0              | he/oled_data[15]_i_1__1_n_0         |                2 |             14 |
+|  CLOCK_IBUF_BUFG       | message/E[0]                             |                                     |                3 |             16 |
+|  keyboard/CLK50MHZ     | keyboard/uut/keycode[7]_i_1_n_0          |                                     |                3 |             16 |
+|  CLOCK_IBUF_BUFG       | scroll/display1/seg[6]_i_1__0_n_0        |                                     |                3 |             16 |
+|  man/unit2/clk         |                                          |                                     |                6 |             20 |
+| ~count_reg[31]_i_3_n_0 |                                          |                                     |                5 |             20 |
+|  CLOCK_IBUF_BUFG       |                                          | clk20hz/count[11]_i_1_n_0           |                3 |             22 |
+|  clk20hz/CLK           |                                          |                                     |                4 |             24 |
+| ~unit/J_MIC3_Pin4_OBUF |                                          |                                     |                4 |             24 |
+|  CLOCK_IBUF_BUFG       | unit1/MAX                                |                                     |                2 |             24 |
+|  CLOCK_IBUF_BUFG       | unit2/display/seg[7]_i_1__0_n_0          |                                     |                2 |             24 |
+|  CLOCK_IBUF_BUFG       |                                          | clk20hz/CLK                         |                3 |             24 |
+|  CLOCK_IBUF_BUFG       | unit1/led_reg[12]_0                      |                                     |                5 |             24 |
+|  CLOCK_IBUF_BUFG       | unit1/p_0_in                             | unit1/MAX                           |                2 |             24 |
+|  improvise/unit2/clk   | message/flag                             |                                     |                6 |             24 |
+|  CLOCK_IBUF_BUFG       | unit2/seg3__0                            |                                     |                3 |             30 |
+|  CLOCK_IBUF_BUFG       | secret/p_0_out                           | secret/oled_data[15]_i_1__2_n_0     |               10 |             30 |
+| ~clk6p25m_BUFG         |                                          | sp/dff1/reset                       |                5 |             34 |
+|  flag_5                |                                          |                                     |               12 |             40 |
+| ~clk6p25m_BUFG         | unit5/delay[0]_i_1_n_0                   | sp/dff1/reset                       |                5 |             40 |
+|  CLOCK_IBUF_BUFG       |                                          | unit1/count[22]_i_1_n_0             |                6 |             44 |
+|  CLOCK_IBUF_BUFG       |                                          | he/unit2/clear                      |                7 |             52 |
+|  CLOCK_IBUF_BUFG       |                                          | improvise/unit1/CO[0]               |                7 |             52 |
+|  CLOCK_IBUF_BUFG       |                                          | man/unit3/clear                     |                7 |             52 |
+|  CLOCK_IBUF_BUFG       |                                          | man/unit2/clear                     |                7 |             52 |
+|  CLOCK_IBUF_BUFG       |                                          | man/unit4/clear                     |                7 |             52 |
+|  CLOCK_IBUF_BUFG       |                                          | message1/unit2/clear                |                7 |             52 |
+|  CLOCK_IBUF_BUFG       |                                          | secret/unit2/clear                  |                7 |             52 |
+|  CLOCK_IBUF_BUFG       |                                          | message/unit2/clear                 |                7 |             52 |
+|  CLOCK_IBUF_BUFG       | scroll/seg0[6]_i_1_n_0                   |                                     |               16 |             56 |
+|  CLOCK_IBUF_BUFG       | unit2/display/count1[31]_i_2__0_n_0      | unit2/display/count1[31]_i_1__1_n_0 |                8 |             62 |
+|  CLOCK_IBUF_BUFG       | scroll/count1[31]_i_2_n_0                | scroll/count1[31]_i_1__0_n_0        |                8 |             62 |
+| ~count_reg[31]_i_3_n_0 | keyboard/uut/count_n_0                   | keyboard/uut/count[31]_i_1_n_0      |                8 |             62 |
+|  CLOCK_IBUF_BUFG       | scroll/display1/count1[31]_i_2__1_n_0    | scroll/display1/count1[31]_i_1_n_0  |                9 |             64 |
+|  flag_5                | keyboard/letter3[7]_i_1_n_0              |                                     |               18 |             64 |
+| ~clk6p25m_BUFG         | unit5/state                              | sp/dff1/reset                       |                9 |             64 |
+|  CLOCK_IBUF_BUFG       | keyboard/cnt_pwd[31]_i_2_n_0             | keyboard/cnt_pwd[31]_i_1_n_0        |                9 |             64 |
+|  CLOCK_IBUF_BUFG       | message/flag                             |                                     |               14 |             72 |
+| ~clk6p25m_BUFG         |                                          | unit5/spi_word[39]_i_1_n_0          |               18 |             90 |
+|  CLOCK_IBUF_BUFG       |                                          |                                     |              280 |            962 |
++------------------------+------------------------------------------+-------------------------------------+------------------+----------------+
+
+
